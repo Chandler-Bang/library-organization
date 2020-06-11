@@ -1,23 +1,35 @@
 CREATE DATABASE library;
 USE library;
+-- 书籍信息
 CREATE TABLE book(
     bookNo varchar(10) primary key,
     bookName varchar(20)not null ,
     importDate date not null ,
     inLibStatus varchar(10) not null ,
     bookStatus varchar(10) not null ,
-    bookPrice double not null ,
+    bookPrice float(2) not null ,
     frequency int not null ,
     category varchar(20) not null
 );
 
-CREATE TABLE reader(
+-- 管理员信息
+CREATE TABLE admin
+(
+    adminname varchar(10) primary key unique,
+    password varchar(10) not null
+)
+
+-- 读者信息
+CREATE TABLE reader
+(
     readerNo varchar(10) primary key,
     readerName varchar(20) not null
 );
 
-CREATE TABLE borrowBook(
-    borrowId varchar(10) primary key,
+-- 借阅信息
+CREATE TABLE borrowBook
+(
+    serialNumber varchar(10) primary key unique,
     readerNo varchar(10) not null,
     bookNo varchar(10) not null unique,
     borrowDate date not null,
@@ -25,17 +37,31 @@ CREATE TABLE borrowBook(
     foreign key (bookNo) references book(bookNo)
 );
 
+-- 归还信息
 CREATE TABLE returnBook(
-    returnId varchar(10) primary key,
+    serialNumber varchar(10) primary key unique,
     readerNo varchar(10) not null,
     bookNo varchar(10) not null,
     returnDate date not null,
-    fine double check (fine>=0),
     foreign key (readerNo) references reader(readerNo),
     foreign key (bookNo) references book(bookNo)
-);
+) ;
 
-CREATE TABLE loss(
+-- 罚款信息
+CREATE TABLE fine
+(
+    serialNumber varchar(10) primary key unique,
+    readerNo varchar(10) not null,
+    bookNo varchar(10) not null,
+    fine float(2) check (fine>=0),
+    lossResult varchar(20) not null,
+    foreign key (readerNo) references reader(readerNo),
+    foreign key (bookNo) references book(bookNo)
+)
+
+-- 遗失信息
+CREATE TABLE loss
+(
     bookNo varchar(10) primary key,
     lossResult varchar(20) not null,
     recordDate date not null,
