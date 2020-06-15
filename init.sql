@@ -16,7 +16,7 @@ CREATE TABLE book
 -- 管理员信息
 CREATE TABLE admin
 (
-    adminname varchar(10) primary key unique,
+    adminname varchar(10) primary key,
     password varchar(10) not null
 );
 
