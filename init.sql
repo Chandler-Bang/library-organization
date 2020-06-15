@@ -46,7 +46,8 @@ CREATE TABLE returnBook
     bookNo varchar(10) not null,
     returnDate date not null,
     foreign key (readerNo) references reader(readerNo),
-    foreign key (bookNo) references book(bookNo)
+    foreign key (bookNo) references book(bookNo),
+    foreign key (serialNumber) references borrowBook(serialNumber)
 );
 
 -- 罚款信息
