@@ -194,7 +194,6 @@ body {
     width: 110px;
 }</style>
 </head>
-
 <body class="htmlNoPages">
   <div class="gwd-div-1cwg"></div>
   <p class="gwd-p-1erh"><span class="gwd-span-69d4">上 架 新 书</span><br>
@@ -218,6 +217,7 @@ body {
   <input class="gwd-input-6y4l" type="text" name="frequency">
   <input class="gwd-input-1b0l" type="text" name="category">
   <input class="gwd-input-15fv" type="submit">
+</body>
+  
+</html>
 
-
-</body></html>
