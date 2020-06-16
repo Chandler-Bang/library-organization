@@ -2,7 +2,7 @@
 $readerNo=$_REQUEST['readerNo'];
 $bookNo=$_REQUEST['bookNo'];
 date_default_timezone_set(PRC);//设置为北京时间
-$borrowDate=date("Y-m-d");
+$borrowDate=date("Y-m-d");//自动获取时间(年月日)
 
 $mysqli = mysqli_connect("localhost", "root", "", "library");
 if (mysqli_connect_errno($mysqli)) {
