@@ -5,7 +5,7 @@ date_default_timezone_set(PRC);//设置为北京时间
 $borrowDate=date("Y-m-d");//自动获取时间(年月日)
 
 $mysqli = mysqli_connect("localhost", "root", "", "library");
-if (mysqli_connect_errno($mysqli)) {
+if (mysqli_connect_errno()) {
     die("Failed to connect to MySQL: (" . mysqli_connect_errno() . ") " . mysqli_connect_error());
 } else
     echo 'sucessful to connect to MySQL!<br/>';
