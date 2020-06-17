@@ -3,26 +3,33 @@
 
 <head>
 <meta charset ="UTF-8">
-<title>总功能</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">	
 <style>
+    .head {
+            margin-top: 50px;
+            text-align: center;
+			font-family:微软雅黑;
+		  font-size:100px;
+        }
 	
-	
-	html,body    <!--用来使div全屏显示-->
+
+	html,body   
 	{
      width:100%;
      height:100%;
+	 background-color:#33ffff;
 	}
 	    
 		
- #divsize    <!--设置背景颜色-->
+    divsize   
 		{
 		width:100%;
 		height:100%;
-		background-color:#336699;
+		
 		}
 		
 		
- .titledemo   <!--设置标题的样式-->
+ .titledemo   
 		{ 
 		  color:white;
 		  font-family:仿宋;
@@ -32,7 +39,7 @@
 		  }
 		 
 		 
-	.titlepos   <!--设置标题的位置-->
+	.titlepos  
 		{
 		position:absolute;
 		top:0;
@@ -42,21 +49,21 @@
 		
 		
 		
-   .tablepos  <!--设置表格的样式和位置-->
+   .tablepos  
 		{
-		position:absolute;
+		
 		top:35%;
 		left:10%;
 		width:100%;
 		height:64%;
 		}
-    td      <!--设置单元格的大小和字体大小-->
+    td      
 	   {
-	   font-size:25px;
+	   font-size:45px;
 	   width:30%;
 	   }
 	   
-	  a   <!--设置显示链接字的颜色-->
+	  a   
 	   {
 	   color:#CCCCCC;
 	   }
@@ -67,13 +74,13 @@
 
 <body>
 <div id="divsize">
-<h1 class="titlepos titledemo">欢迎使用图书馆服务系统</h1>
-
-<table class="tablepos">
-<tr>  <td> <a href="inlib" >查询图书在馆状态</a> </td>  <td><a href="addreader.php">新增读者</a></td>  <td><a href="xiajia.php">过遗下架</a></td>  </tr>
-<tr>  <td> <a href="bookhis.php">查询图书借阅历史</a></td>  <td><a href="addbook.php">上架新书</a></td>  <td><a href="fine.php">逾期罚款</a></td>  </tr>
-<tr>  <td> <a href="readerhis.php">查询读者借阅记录</a></td>  <td><a href="recommend.php">热书推荐</a></td>  <td><a href="xiuli.php">破损修理</a></td>  </tr>
-<tr>  <td> <a href="borrow.php">借阅图书</a></td>  <td><a href="back.php">归还图书</a></td><td></td></tr>
+<div class="head">欢迎来到图书管理系统</div>
+<div style="text-align:center;">
+<table class="tablepos" cellspacing="30px" align="center" style="margin:0px auto;">
+<tr style="background-color:#ff9999">  <td align="center"> <a href="inlib" >查询图书在馆状态</a> </td>  <td align="center"><a href="addreader.php">新增读者</a></td>  <td align="center"><a href="xiajia.php">过遗下架</a></td>  </tr>
+<tr style="background-color:#ff9999">  <td align="center"> <a href="bookhis.php">查询图书借阅历史</a></td>  <td align="center"><a href="addbook.php">上架新书</a></td>  <td align="center"><a href="fine.php">逾期罚款</a></td>  </tr>
+<tr style="background-color:#ff9999">  <td align="center"> <a href="readerhis.php">查询读者借阅记录</a></td>  <td align="center"><a href="recommend.php">热书推荐</a></td>  <td align="center"><a href="xiuli.php">破损修理</a></td>  </tr>
+<tr style="background-color:#ff9999">  <td align="center"> <a href="borrow.php">借阅图书</a></td>  <td align="center"><a href="back.php">归还图书</a></td><td></td></tr>
 </table>
 
 </div>
