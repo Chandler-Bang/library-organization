@@ -45,6 +45,7 @@
 				请输入读者号：<input name='readerno' type='text'/></br>
 		<input class="button" type="submit" name="search" value="查询"></br>
     </form>
+	<a href='index.php' target='Rborr_history.php'>返回主页面</a></br>
 </body>
 
 </html>
