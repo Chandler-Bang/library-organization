@@ -50,12 +50,12 @@
             margin: 5px 5px;
         }
 
-        .readerNo {
+        .serialNumber {
             position: absolute;
             top: 100px;
         }
 
-        .bookNo {
+        .readerNo {
             position: absolute;
             top: 140px;
         }
@@ -115,13 +115,13 @@
     <div class="box">
         <div class="head">归还图书</div>
         <div class="profile">请输入归还相关信息:</div><br>
-        <form action="">
-            <div class="readerNo">
-                <span class="Title" style="letter-spacing: 0.5em;">流水号</span><input class="text" type="text"
-                    name="readerNo">
+        <form method="POST" action="bookReturn.php"><!--读者姓名没有通过表单去填写-->
+            <div class="serialNumber">
+                <span class="Title" style="letter-spacing: 0.5em;">流水号</span><input class="text" type="number"
+                    name="serialNumber">
             </div>
-            <div class="bookNo">
-                <span class="Title">归还时间</span><input class="text" type="text" name="readerNo">
+            <div class="readerNo">
+                <span class="Title">读者编号</span><input class="text" type="text" name="readerNo">
             </div>
             <div class="submit"><input class="button" type="submit" name="button" value="提交"></div>
         </form>

@@ -115,13 +115,13 @@
     <div class="box">
         <div class="head">借阅图书</div>
         <div class="profile">请输入借阅相关信息:</div><br>
-        <form action="">
+        <form method="POST" action="bookBorrow.php">
             <div class="readerNo">
                 <span class="Title" style="letter-spacing: 0.5em;">读者号</span><input class="text" type="text"
                     name="readerNo">
             </div>
             <div class="bookNo">
-                <span class="Title">图书编号</span><input class="text" type="text" name="readerNo">
+                <span class="Title">图书编号</span><input class="text" type="text" name="bookNo">
             </div>
             <div class="submit"><input class="button" type="submit" name="button" value="提交"></div>
         </form>
