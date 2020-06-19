@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>reader insert</title>
+    <title>book loss</title>
     <style>
         * {
             margin: 0px;
@@ -50,12 +50,12 @@
             margin: 5px 5px;
         }
 
-        .readerNo {
+        .bookNo {
             position: relative;
             /*top: 100px;*/
         }
 
-        .readername {
+        .lossResult {
             position: relative;
             /*top: 140px;*/
         }
@@ -114,16 +114,16 @@
 
 <body>
     <div class="box">
-        <div class="head">新增读者</div>
+        <div class="head">录入图书损失信息</div>
         <br>
-        <div class="profile">请输入读者相关信息:</div><br>
-        <form method="POST" action="readerInsert.php">
-            <div class="readerNo">
-                <span class="Title" style="letter-spacing: 0.5em;">读者号</span><input class="text" type="text"
-                    name="readerNo"><br><br>
+        <div class="profile">请输入损失相关信息:</div><br>
+        <form method="POST" action="loss.php">
+            <div class="bookNo">
+                <span class="Title" style="letter-spacing: 0.5em;">图书编号</span><input class="text" type="text"
+                    name="bookNo"><br><br>
             </div>
-            <div class="readername">
-                <span class="Title">读者姓名</span><input class="text" type="text" name="readerName">
+            <div class="lossResult">
+                <span class="Title" style="letter-spacing: 0.5em;">损失结果</span><input class="text" type="text" name="lossResult">
             </div>
             <div class="submit"><input class="button" type="submit" name="button" value="提交"></div>
         </form>
