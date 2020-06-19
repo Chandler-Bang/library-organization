@@ -29,7 +29,7 @@ if($res=mysqli_query($conn,$str))
 
 echo "</table>";
 // 表格输出完毕
-echo "<a href='recommend.php' target='recommend01.php'>返回上一页面</a></br>";
-echo "<a href='main.php' target='recommend01.php'>返回主页面</a></br>";
+echo "<a href='recommend.php' target='recommend_backend.php'>返回上一页面</a></br>";
+echo "<a href='main.php' target='recommend_backend.php'>返回主页面</a></br>";
 mysqli_close($conn);  //还差美化界面 -> TODO: 等测试阶段进行
 ?>
