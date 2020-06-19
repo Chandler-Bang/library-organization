@@ -88,7 +88,7 @@ height:20px;
    </div>
 
   <div class="sub"><br/><br/><input  type="submit" value="提交" style="width:80px;height:30px"></div>
-  <div class="sub"><br/><a href="allfunction.html" style="color:white;font-size:20px;">返回主页面</a></div>
+  <div class="sub"><br/><a href="main.php" style="color:white;font-size:20px;">返回主页面</a></div>
 
 
   </form>

@@ -90,7 +90,7 @@
             图书类别<input  type="text" name="category">
         </div>
 
-        <span class="span1"><a href="allfunction.html" style="color:white;font-size:20px;">返回主页面</a></span>
+        <span class="span1"><a href="main.php" style="color:white;font-size:20px;">返回主页面</a></span>
         <span class="span2"><input  type="submit" value="提交" style="width:80px;height:30px"></span>
 
     </form>
