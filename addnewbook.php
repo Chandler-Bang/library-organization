@@ -2,98 +2,156 @@
 <html lang="en">
 
 <head>
-
-    <meta charset="utf-8">
-    <title>上架新书</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add new book</title>
     <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
 
-        html,body
-        {
-            width: 100%;
+        html,
+        body {
             height: 100%;
         }
-        * {
-            margin: 0;
-            padding: 0;
+
+        h1 {
+            text-align: center;
+            background-color: red;
         }
 
-        #divsize
-        {
-            width:100%;
-            height:100%;
-            background-color:#336699;
+        .box {
+            border: 5px solid;
+            border-radius: 10px;
+            top: 50px;
+            background-color: rgb(173, 169, 129);
+            margin: 0px auto;
+            width: 400px;
+            height: 500px;
+            position: relative;
         }
 
-        #titledemo
-        {
-            color:white;
-            font-family:仿宋;
-            font-size:80px;
-            font-weight:bold;
-            text-align :center;
-            width:100%;
-            height:10%;
+        .head {
+            text-align: center;
+            font: 32px kaiti;
+            color: white;
+            background-color: brown;
+            font-weight: bold;
+            line-height: 40px;
+            padding: 10px;
+
         }
 
-        .content
-        {
-            text-align:center;
-            font-family:仿宋;
-            color:white;
-            font-size:30px;
-            text-align:center;
-            position:absolute;
-            top:30%;
-            left:27%;
+        .profile {
+
+            color: white;
+            font: 20px kaiti;
+            margin: 5px 5px;
         }
 
-        .span1
-        {
-            width:100px;
-            height:40px;
-            position:absolute;
-            top:80%;
-            left:43%;
+        .submit {
+            position: absolute;
+            top: 465px;
+            left: 160px;
         }
 
-        .span2
-        {
-            width:100px;
-            height:40px;
-            position:absolute;
-            top:80%;
-            left:60%;
+        .text {
+            border: 3px;
+            height: 25px;
+            border-radius: 5px;
+            position: absolute;
+            left: 150px;
+            width: 200px;
         }
 
+        .Title {
+            color: white;
+            font: 20px kaiti;
+            margin-left: 30px;
+
+        }
+
+        .button {
+            margin: 0 auto;
+            padding: 8px;
+            background-color: #892844;
+            color: white;
+            width: 90px;
+            border-radius: 6px;
+        }
+
+        .button:hover {
+            background-color: rgb(62, 12, 85);
+        }
+
+        .back {
+            position: absolute;
+            top: 95%;
+            left: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            background-color: darkgoldenrod;
+            color: white;
+            border-radius: 2px;
+            padding: 5px;
+        }
     </style>
 </head>
 
 
-<body >
-
-
-<div id="divsize">
-
-    <div id="titledemo">上 架 新 书</div>
-
-    <form method="post" action="newbk.php">
-
-        <div class="content">
-            图书编号<input  type="text" name="bookid">
-            图书名&nbsp;&nbsp;<input  type="text" name="bookname"> <br/><br/>
-            在馆状态<input  type="text" name="inlib">
-            图书状态<input  type="text" name="status"><br/><br/>
-            图书价格<input  type="text" name="price">
-            上架时间<input  type="text" name="time"><br/><br/>
-            借阅频度<input  type="text" name="frequency">
-            图书类别<input  type="text" name="category">
-        </div>
-
-        <span class="span1"><a href="main.php" style="color:white;font-size:20px;">返回主页面</a></span>
-        <span class="span2"><input  type="submit" value="提交" style="width:80px;height:30px"></span>
-
-    </form>
-</div>
+<body>
+    <div class="box">
+        <div class="head">上架新书</div>
+        <br>
+        <div class="profile">请输入图书相关信息:</div><br>
+        <form method="POST" action="bookInsert.php">
+		
+            <div>
+                <span class="Title" style="letter-spacing: 0.5em;">图书编号</span><input class="text" type="text"name="bookNo"><br><br>
+            </div>
+			
+            <div>
+                <span class="Title" style="letter-spacing: 0.5em;">图书名</span><input class="text" type="text" name="bookName"><br><br>
+            </div>
+			
+			<div >
+                <span class="Title" style="letter-spacing: 0.5em;">登记日期</span><input class="text" type="text"
+                    name="importDate"><br><br>
+            </div>
+			
+			<div>
+                <span class="Title" style="letter-spacing: 0.5em;">在馆状态</span><input class="text" type="text"
+                    name="inLibStatus"><br><br>
+            </div>
+			
+			<div >
+                <span class="Title" style="letter-spacing: 0.5em;">书籍状态</span><input class="text" type="text"
+                    name="bookStatus"><br><br>
+            </div>
+			
+			<div >
+                <span class="Title" style="letter-spacing: 0.5em;">书籍价格</span><input class="text" type="text"
+                    name="bookPrice"><br><br>
+            </div>
+			
+			<div >
+                <span class="Title" style="letter-spacing: 0.5em;">借书频率</span><input class="text" type="text"
+                    name="frequ"><br><br>
+            </div>
+			
+			<div >
+                <span class="Title" style="letter-spacing: 0.5em;">书籍种类</span><input class="text" type="text"
+                    name="category"><br><br>
+            </div>
+			
+            <div class="submit"><input class="button" type="submit" name="button" value="提交"></div>
+        </form>
+    </div>
+    <div class="back"><a href="index.php">返回主界面</a></div>
 </body>
+
 </html>
+<?php
