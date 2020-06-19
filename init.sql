@@ -30,7 +30,7 @@ CREATE TABLE reader
 -- 借阅信息
 CREATE TABLE borrowBook
 (
-    serialNumber unsigned int primary key AUTO_INCREMENT,
+    serialNumber int primary key AUTO_INCREMENT,
     readerNo varchar(10) not null,
     bookNo varchar(10) not null unique,
     borrowDate date not null,
@@ -41,7 +41,7 @@ CREATE TABLE borrowBook
 -- 归还信息
 CREATE TABLE returnBook
 (
-    serialNumber unsigned int primary key,
+    serialNumber int primary key,
     readerNo varchar(10) not null,
     bookNo varchar(10) not null,
     returnDate date not null,
@@ -53,7 +53,7 @@ CREATE TABLE returnBook
 -- 罚款信息
 CREATE TABLE fine
 (
-    serialNumber unsigned int primary key,
+    serialNumber int primary key,
     readerNo varchar(10) not null,
     bookNo varchar(10) not null,
     fine float(2) check (fine>=0),

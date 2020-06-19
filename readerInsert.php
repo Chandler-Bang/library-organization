@@ -2,7 +2,7 @@
 $readerNo=$_REQUEST['readerNo'];
 $readerName=$_REQUEST['readerName'];
 $mysqli = mysqli_connect("localhost", "root", "", "library");
-if (mysqli_connect_errno($mysqli)) {
+if (mysqli_connect_errno()) {
     die("Failed to connect to MySQL: (" . mysqli_connect_errno() . ") " . mysqli_connect_error());
 } else
     echo 'successful to connect to MySQL!<br/>';

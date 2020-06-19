@@ -10,7 +10,7 @@ if (mysqli_connect_errno($mysqli)) {
 $demand = "INSERT INTO admin values('$admin','$paswrd')";
 $res=mysqli_query($mysqli,$demand);
 if ($res) {
-    echo "Insert sucessfully!<br/>";
+    echo "Insert successfully!<br/>";
 } else {
     echo "Insert failed!<br/>";
 }

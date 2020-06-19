@@ -17,7 +17,7 @@ if (mysqli_connect_errno()) {
 $demand = "INSERT INTO book values('$bookNo','$bookName','$importDate','$inLibStatus','$bookStatus',$bookPrice,$frequ,'$category')";
 $res=mysqli_query($mysqli,$demand);
 if ($res) {
-    echo "Insert sucessfully!<br/>";
+    echo "Insert successfully!<br/>";
 } else {
     echo "Insert failed!<br/>";
 }

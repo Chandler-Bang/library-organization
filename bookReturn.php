@@ -2,7 +2,7 @@
 $serialNum=$_REQUEST['serialNumber'];
 $readerNo=$_REQUEST['readerNo'];
 $bookNo=$_REQUEST['bookNo'];
-date_default_timezone_set(PRC);//设置为北京时间
+date_default_timezone_set(Asia);//设置为北京时间
 $returnDate=date("Y-m-d");//自动获取时间(年月日)
 
 $mysqli = mysqli_connect("localhost", "root", "", "library");

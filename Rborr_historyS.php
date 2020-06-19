@@ -13,10 +13,9 @@ echo"<tr><td>图书编号</td><td>图书名</td><td>读者号</td><td>读者名<
 if($res=mysqli_query($conn,$str))  //这个和mysql_query参数有一定的顺序差别，这个用不了反过来就行
 {
 	while($row=mysqli_fetch_row($res))
-{
-	echo '<tr><td>$row[0]</td><td>$row[1]</td><td>$row[2]</td><td>$row[3]</td><td>$row[4]</td><td>$row[5]</td></tr>';
-	
-}
+    {
+        echo '<tr><td>$row[0]</td><td>$row[1]</td><td>$row[2]</td><td>$row[3]</td><td>$row[4]</td><td>$row[5]</td></tr>';
+    }
 }
 
 echo "</table>";

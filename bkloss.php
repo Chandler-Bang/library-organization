@@ -76,7 +76,7 @@ height:20px;
   <form method="post" action="loss.php">
   
    <div class="content">  
-   流水号&nbsp;&nbsp;&nbsp;<input  type="text" name="number"><br/><br/>
+   图书编号&nbsp;<input  type="text" name="number"><br/><br/>
    损失类型
             <select name="type">
 			<option value="damage">破损</option>

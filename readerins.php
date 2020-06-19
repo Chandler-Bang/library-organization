@@ -62,7 +62,7 @@ text-align:center;
   
   <div class="titledemo">登记新读者</div>
   
-  <form method="post" action="newreader.php">
+  <form method="post" action="readerInsert.php">
   
    <div class="content">  
    读者号&nbsp;&nbsp;&nbsp;&nbsp;<input  type="text" name="id"><br/><br/>
@@ -70,7 +70,7 @@ text-align:center;
    </div>
 
   <div class="span1"><br/><input  type="submit" value="提交" style="width:80px;height:30px"></div>
-  <div class="span1"><br/><a href="allfunction.html" style="color:white;font-size:20px;">返回主页面</a></div>
+  <div class="span1"><br/><a href="main.php" style="color:white;font-size:20px;">返回主页面</a></div>
 
 
   </form>
