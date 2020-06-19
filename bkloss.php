@@ -76,7 +76,7 @@ height:20px;
   <form method="post" action="loss.php">
   
    <div class="content">  
-   流水号&nbsp;&nbsp;&nbsp;<input  type="text" name="number"><br/><br/>
+   图书编号&nbsp;<input  type="text" name="number"><br/><br/>
    损失类型
             <select name="type">
 			<option value="damage">破损</option>
@@ -88,7 +88,7 @@ height:20px;
    </div>
 
   <div class="sub"><br/><br/><input  type="submit" value="提交" style="width:80px;height:30px"></div>
-  <div class="sub"><br/><a href="allfunction.html" style="color:white;font-size:20px;">返回主页面</a></div>
+  <div class="sub"><br/><a href="main.php" style="color:white;font-size:20px;">返回主页面</a></div>
 
 
   </form>

@@ -51,13 +51,13 @@
         }
 
         .readerNo {
-            position: absolute;
-            top: 100px;
+            position: relative;
+            /*top: 100px;*/
         }
 
         .bookNo {
-            position: absolute;
-            top: 140px;
+            position: relative;
+            /*top: 140px;*/
         }
 
         .submit {
@@ -67,11 +67,12 @@
         }
 
         .text {
-            border: 1px;
+            border: 3px;
             height: 25px;
-            border-radius: 3px;
+            border-radius: 5px;
             position: absolute;
             left: 150px;
+            width: 200px;
         }
 
         .Title {
@@ -86,7 +87,7 @@
             padding: 8px;
             background-color: #892844;
             color: white;
-            width: 80px;
+            width: 90px;
             border-radius: 6px;
         }
 
@@ -114,11 +115,12 @@
 <body>
     <div class="box">
         <div class="head">借阅图书</div>
+        <br>
         <div class="profile">请输入借阅相关信息:</div><br>
         <form method="POST" action="bookBorrow.php">
             <div class="readerNo">
                 <span class="Title" style="letter-spacing: 0.5em;">读者号</span><input class="text" type="text"
-                    name="readerNo">
+                    name="readerNo"><br><br>
             </div>
             <div class="bookNo">
                 <span class="Title">图书编号</span><input class="text" type="text" name="bookNo">

@@ -1,82 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!--登陆界面，主题色是 #892844-->
 <head>
-<meta charset ="UTF-8">
-<title>总功能</title>
-<style>
-	
-	
-	html,body    <!--用来使div全屏显示-->
-	{
-     width:100%;
-     height:100%;
-	}
-	    
-		
- #divsize    <!--设置背景颜色-->
-		{
-		width:100%;
-		height:100%;
-		background-color:#336699;
-		}
-		
-		
- .titledemo   <!--设置标题的样式-->
-		{ 
-		  color:white;
-		  font-family:仿宋;
-		  font-size:80px;
-		  font-weight:bold;
-		  text-align :center;
-		  }
-		 
-		 
-	.titlepos   <!--设置标题的位置-->
-		{
-		position:absolute;
-		top:0;
-		width:100%;
-		height:25%;
-		}
-		
-		
-		
-   .tablepos  <!--设置表格的样式和位置-->
-		{
-		position:absolute;
-		top:35%;
-		left:10%;
-		width:100%;
-		height:64%;
-		}
-    td      <!--设置单元格的大小和字体大小-->
-	   {
-	   font-size:25px;
-	   width:30%;
-	   }
-	   
-	  a   <!--设置显示链接字的颜色-->
-	   {
-	   color:#CCCCCC;
-	   }
-</style>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href=
+    "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="login.css">
+    <title>Login Page</title>
 </head>
 
-
-
 <body>
-<div id="divsize">
-<h1 class="titlepos titledemo">欢迎使用图书馆服务系统</h1>
+<form action="validate.php" method="post">
+    <div class="login-box">
+        <h1>Login</h1>
 
-<table class="tablepos">
-<tr>  <td> <a href="inlib" >查询图书在馆状态</a> </td>  <td><a href="addreader.php">新增读者</a></td>  <td><a href="xiajia.php">过遗下架</a></td>  </tr>
-<tr>  <td> <a href="bookhis.php">查询图书借阅历史</a></td>  <td><a href="addbook.php">上架新书</a></td>  <td><a href="fine.php">逾期罚款</a></td>  </tr>
-<tr>  <td> <a href="readerhis.php">查询读者借阅记录</a></td>  <td><a href="recommend.php">热书推荐</a></td>  <td><a href="xiuli.php">破损修理</a></td>  </tr>
-<tr>  <td> <a href="borrow.php">借阅图书</a></td>  <td><a href="back.php">归还图书</a></td><td></td></tr>
-</table>
+        <div class="textbox">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <input type="text" placeholder="Admin name"
+                   name="adminname" value="">
+        </div>
 
-</div>
+        <div class="textbox">
+            <i class="fa fa-lock" aria-hidden="true"></i>
+            <input type="password" placeholder="Password"
+                   name="password" value="">
+        </div>
 
+        <input class="button" type="submit"
+               name="login" value="Sign In">
+    </div>
+</form>
 </body>
+
 </html>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        background: url() no-repeat;
+        background-size: cover;
+    }
+
+    .login-box {
+        width: 280px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: ;
+    }
+
+    .login-box h1 {
+        float: left;
+        font-size: 40px;
+
+        border-bottom: 5px solid #892844;
+        margin-bottom: 50px;
+        padding: 13px;
+    }
+
+    .textbox {
+        width: 100%;
+        overflow: hidden;
+        font-size: 20px;
+        padding: 8px 0;
+        margin: 8px 0;
+        border-bottom: 1px solid #892844;
+    }
+
+    .fa {
+        width: 20px;
+        float: left;
+        text-align: center;
+    }
+
+    .textbox input {
+        border: none;
+        outline: none;
+        background: none;
+
+        font-size: 18px;
+        float: left;
+        margin: 0 10px;
+    }
+
+    .button {
+        width: 100%;
+        padding: 8px;
+        color: #ffffff;
+        background: none #892844;
+        border: none;
+        border-radius: 6px;
+        font-size: 18px;
+        cursor: pointer;
+        margin: 12px 0;
+    }
+</style>

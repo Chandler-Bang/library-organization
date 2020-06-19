@@ -10,11 +10,11 @@ if (mysqli_connect_errno($mysqli)) {
 $demand = "INSERT INTO admin values('$admin','$paswrd')";
 $res=mysqli_query($mysqli,$demand);
 if ($res) {
-    echo "Insert sucessfully!<br/>";
+    echo "Insert successfully!<br/>";
 } else {
     echo "Insert failed!<br/>";
 }
 mysqli_free_result($res);
 mysqli_close($mysqli);
 ?>
-<a href="index.php">回到首页</a>
+<a href="main.php">回到首页</a>
