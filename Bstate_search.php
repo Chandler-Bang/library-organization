@@ -25,7 +25,7 @@ if($res=mysqli_query($conn,$str))  //这个和mysql_query参数有一定的顺�
 }
 echo "</table>";
 // 表格输出结束
-echo "<a href='Bstate.php' target='Bstate_search.php'>返回上一页面</a></br>";
+echo "<a href='Bstate.php' target='Bstate_search.php'>返回上一页</a></br>";
 echo "<a href='main.php' target='Bstate_search.php'>回到首页</a></br>";
 mysqli_close($conn);  //还差美化界面
 ?>
