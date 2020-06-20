@@ -1,135 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>reader insert</title>
-    <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-        }
-
-        html,
-        body {
-            height: 100%;
-        }
-
-        h1 {
-            text-align: center;
-            background-color: red;
-        }
-
-        .box {
-            border: 5px solid;
-            border-radius: 10px;
-            top: 100px;
-            background-color: rgb(173, 169, 129);
-            margin: 0px auto;
-            width: 400px;
-            height: 300px;
-            position: relative;
-        }
-
-        .head {
-            text-align: center;
-            font: 32px kaiti;
-            color: white;
-            background-color: brown;
-            font-weight: bold;
-            line-height: 40px;
-            padding: 10px;
-
-        }
-
-        .profile {
-
-            color: white;
-            font: 20px kaiti;
-            margin: 5px 5px;
-        }
-
-        .readerNo {
-            position: relative;
-            /*top: 100px;*/
-        }
-
-        .readername {
-            position: relative;
-            /*top: 140px;*/
-        }
-
-        .submit {
-            position: absolute;
-            top: 200px;
-            left: 160px;
-        }
-
-        .text {
-            border: 3px;
-            height: 25px;
-            border-radius: 5px;
-            position: absolute;
-            left: 150px;
-            width: 200px;
-        }
-
-        .Title {
-            color: white;
-            font: 20px kaiti;
-            margin-left: 30px;
-
-        }
-
-        .button {
-            margin: 0 auto;
-            padding: 8px;
-            background-color: #892844;
-            color: white;
-            width: 90px;
-            border-radius: 6px;
-        }
-
-        .button:hover {
-            background-color: rgb(62, 12, 85);
-        }
-
-        .back {
-            position: absolute;
-            top: 95%;
-            left: 10px;
-        }
-
-        a {
-            text-decoration: none;
-            background-color: darkgoldenrod;
-            color: white;
-            border-radius: 2px;
-            padding: 5px;
-        }
-    </style>
-</head>
-
-
-<body>
-    <div class="box">
-        <div class="head">新增读者</div>
-        <br>
-        <div class="profile">请输入读者相关信息:</div><br>
-        <form method="POST" action="readerInsert.php">
-            <div class="readerNo">
-                <span class="Title" style="letter-spacing: 0.5em;">读者号</span><input class="text" type="text"
-                    name="readerNo"><br><br>
-            </div>
-            <div class="readername">
-                <span class="Title">读者姓名</span><input class="text" type="text" name="readerName">
-            </div>
-            <div class="submit"><input class="button" type="submit" name="button" value="提交"></div>
-        </form>
-    </div>
-    <div class="back"><a href="index.php">返回主界面</a></div>
-</body>
-
-</html>
 <?php
+$readerNo=$_REQUEST['readerNo'];
+$readerName=$_REQUEST['readerName'];
+$mysqli = mysqli_connect("localhost", "root", "", "library");
+if (mysqli_connect_errno()) {
+    die("Failed to connect to MySQL: (" . mysqli_connect_errno() . ") " . mysqli_connect_error());
+} else
+    echo 'successful to connect to MySQL!<br/>';
+//插入读者信息命令
+$demand = "INSERT INTO reader values('$readerNo','$readerName')";
+$res=mysqli_query($mysqli,$demand);
+if ($res) {
+    echo "Insert successfully!<br/>";
+} else {
+    echo "Insert failed!<br/>";
+}
+mysqli_free_result($res);
+mysqli_close($mysqli);
+?>
+<a href="main.php">回到首页</a>
