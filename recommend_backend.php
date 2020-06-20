@@ -30,6 +30,6 @@ if($res=mysqli_query($mysqli,$str))
 echo "</table>";
 // 表格输出完毕
 echo "<a href='recommend.php' target='recommend_backend.php'>返回上一页面</a></br>";
-echo "<a href='main.php' target='recommend_backend.php'>返回主页面</a></br>";
+echo "<a href='main.php' target='recommend_backend.php'>回到首页</a></br>";
 mysqli_close($mysqli);  //还差美化界面 -> TODO: 等测试阶段进行
 ?>

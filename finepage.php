@@ -46,7 +46,7 @@
 				请输入罚款金额：<input name='fine' type='text'/></br>
 		<input class="button" type="submit" name="insert" value="登记罚款"></br>
     </form>
-	<a href='allfunction.php' target='finepage.php'><center>返回主页面</center></a></br>
+	<a href='allfunction.php' target='finepage.php'><center>回到首页</center></a></br>
 </body>
 
 </html>
