@@ -52,7 +52,7 @@
 
         .submit {
             position: absolute;
-            top: 465px;
+            top: 430px;
             left: 160px;
         }
 
@@ -62,7 +62,7 @@
             border-radius: 5px;
             position: absolute;
             left: 150px;
-            width: 200px;
+            width: 220px;
         }
 
         .Title {
@@ -144,7 +144,7 @@
 			
 			<div >
                 <span class="Title" style="letter-spacing: 0.5em;">书籍种类</span><input class="text" type="text"
-                    name="category"><br><br>
+                    name="category">
             </div>
 			
             <div class="submit"><input class="button" type="submit" name="button" value="提交"></div>
