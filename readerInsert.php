@@ -9,9 +9,9 @@ if (mysqli_connect_errno()) {
 $demand = "INSERT INTO reader values('$readerNo','$readerName')";
 $res=mysqli_query($mysqli,$demand);
 if ($res) {
-    echo '<script>alert("插入成功");location="readerins.php";</script>';
+    echo '<script>alert("注册成功");location="readerins.php";</script>';
 } else {
-    echo '<script>alert("插入失败");location="readerins.php";</script>';
+    echo '<script>alert("注册失败");location="readerins.php";</script>';
 }
 mysqli_free_result($res);
 mysqli_close($mysqli);

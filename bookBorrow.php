@@ -11,13 +11,14 @@ if (mysqli_connect_errno()) {
     echo 'sucessful to connect to MySQL!<br/>';
 //插入书籍借阅信息命令
 $demand = "INSERT INTO borrowBook(readerNo,bookNo,borrowDate) values('$readerNo','$bookNo','$borrowDate')";
-$res=mysqli_query($mysqli,$demand);
-if ($res) {
+$res1=mysqli_query($mysqli,$demand);
+// $res2=mysqli_query($mysqli,$demand2);
+if ($res1) {
     echo "Insert sucessfully!<br/>";
 } else {
     echo "Insert failed!<br/>";
 }
-mysqli_free_result($res);
+mysqli_free_result($res1);
 mysqli_close($mysqli);
 ?>
 <a href="main.php">回到首页</a>

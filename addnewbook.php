@@ -122,7 +122,7 @@
                     name="importDate"><br><br>
             </div>
 			
-			<div>
+			<!-- <div>
                 <span class="Title" style="letter-spacing: 0.5em;">在馆状态</span><input class="text" type="text"
                     name="inLibStatus"><br><br>
             </div>
@@ -130,7 +130,7 @@
 			<div >
                 <span class="Title" style="letter-spacing: 0.5em;">书籍状态</span><input class="text" type="text"
                     name="bookStatus"><br><br>
-            </div>
+            </div> -->
 			
 			<div >
                 <span class="Title" style="letter-spacing: 0.5em;">书籍价格</span><input class="text" type="text"
