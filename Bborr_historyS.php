@@ -21,8 +21,8 @@ if($res=mysqli_query($conn,$str))  //这个和mysql_query参数有一定的顺�
 }
 
 echo "</table>";
-echo "<a href='Bborr_history.php' target='Bborr_historyS.php'>返回上一页面</a></br>";
-echo "<a href='main.php' target='Bborr_historyS.php'>回到首页</a></br>";
+echo "<a href='Bborr_history.php' >返回上一页面</a></br>";
+echo "<a href='main.php' >回到首页</a></br>";
 mysqli_close($conn);  //还差美化界面
 
 	
