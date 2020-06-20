@@ -7,18 +7,17 @@ $borrowDate=date("Y-m-d");//自动获取时间(年月日)
 $mysqli = mysqli_connect("localhost", "root", "", "library");
 if (mysqli_connect_errno()) {
     die("Failed to connect to MySQL: (" . mysqli_connect_errno() . ") " . mysqli_connect_error());
-} else
-    echo 'sucessful to connect to MySQL!<br/>';
+} 
 //插入书籍借阅信息命令
 $demand = "INSERT INTO borrowBook(readerNo,bookNo,borrowDate) values('$readerNo','$bookNo','$borrowDate')";
 $res1=mysqli_query($mysqli,$demand);
-// $res2=mysqli_query($mysqli,$demand2);
+$demand2="UPDATE book SET frequency=frequency+1 where bookNo='$bookNo'";
 if ($res1) {
-    echo "Insert sucessfully!<br/>";
+    echo '<script>alert("借书成功");location="borrowpage.php";</script>';
+    mysqli_query($mysqli,$demand2); //借书成功，借书频率+1
 } else {
-    echo "Insert failed!<br/>";
+    echo '<script>alert("失败");location="borrowpage.php";</script>';
 }
-mysqli_free_result($res1);
 mysqli_close($mysqli);
 ?>
 <a href="main.php">回到首页</a>

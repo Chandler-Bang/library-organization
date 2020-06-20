@@ -15,11 +15,10 @@ if (mysqli_connect_errno()) {
 //插入书籍信息命令
 $demand = "INSERT INTO book values('$bookNo','$bookName','$importDate','$inLibStatus','$bookStatus',$bookPrice,$frequ,'$category')";
 $res=mysqli_query($mysqli,$demand);
-if ($res) {
+mysqli_close($mysqli); //查询已经结束，在这里关闭连接
+if ($res) { //跳转页面
     echo '<script>alert("新书录入成功");location="addnewbook.php";</script>';
 } else {
     echo '<script>alert("新书录入失败");location="addnewbook.php";</script>';
 }
-mysqli_free_result($res);
-mysqli_close($mysqli);
 ?>
