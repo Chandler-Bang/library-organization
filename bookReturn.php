@@ -13,7 +13,7 @@ if (mysqli_connect_errno()) {
 $demand = "INSERT INTO returnBook values($serialNum,'$readerNo','$bookNo','$returnDate')";
 $res=mysqli_query($mysqli,$demand);
 if ($res) {
-    echo "Insert sucessfully!<br/>";
+    echo "Insert successfully!<br/>";
 } else {
     echo "Insert failed!<br/>";
 }

@@ -20,4 +20,3 @@ if ($res1) {
 }
 mysqli_close($mysqli);
 ?>
-<a href="main.php">回到首页</a>
