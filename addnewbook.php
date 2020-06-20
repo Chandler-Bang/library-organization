@@ -150,7 +150,7 @@
             <div class="submit"><input class="button" type="submit" name="button" value="提交"></div>
         </form>
     </div>
-    <div class="back"><a href="index.php">返回主界面</a></div>
+    <div class="back"><a href="main.php">回到首页</a></div>
 </body>
 
 </html>
