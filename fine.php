@@ -20,4 +20,3 @@ if ($res) {
 mysqli_free_result($res);
 mysqli_close($mysqli);
 ?>
-<a href="index.php">回到首页</a>
