@@ -8,8 +8,7 @@ $returnDate=date("Y-m-d");//自动获取时间(年月日)
 $mysqli = mysqli_connect("localhost", "root", "", "library");
 if (mysqli_connect_errno()) {
     die("Failed to connect to MySQL: (" . mysqli_connect_errno() . ") " . mysqli_connect_error());
-} else
-    echo 'successful to connect to MySQL!<br/>';
+} 
 //插入书籍归还信息命令
 $demand = "INSERT INTO returnBook values($serialNum,'$readerNo','$bookNo','$returnDate')";
 $res=mysqli_query($mysqli,$demand);

@@ -8,8 +8,7 @@ $lossResult=$_REQUEST['lossResult'];
 $mysqli = mysqli_connect("localhost", "root", "", "library");
 if (mysqli_connect_errno($mysqli)) {
     die("Failed to connect to MySQL: (" . mysqli_connect_errno() . ") " . mysqli_connect_error());
-} else
-    echo 'sucessful to connect to MySQL!<br/>';
+} 
 //插入罚款信息命令
 $demand = "INSERT INTO fine values($serialNum,'$readerNo','$bookNo',$fine,'$lossResult')";
 $res=mysqli_query($mysqli,$demand);
