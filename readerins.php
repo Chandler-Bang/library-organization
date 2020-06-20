@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>reader insert</title>
+    <title>读者注册</title>
     <style>
         * {
             margin: 0px;
@@ -128,7 +128,7 @@
             <div class="submit"><input class="button" type="submit" name="button" value="提交"></div>
         </form>
     </div>
-    <div class="back"><a href="index.php">返回主界面</a></div>
+    <div class="back"><a href="main.php">返回主界面</a></div>
 </body>
 
 </html>

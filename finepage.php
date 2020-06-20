@@ -44,7 +44,7 @@
 	            请输入流水号：<input name='serialnumber' type='text'/></br>
 				请进行违约备注：<input name='note' type='text'/></br>
 				请输入罚款金额：<input name='fine' type='text'/></br>
-		<input class="button" type="submit" name="insert" value="打印罚款信息"></br>
+		<input class="button" type="submit" name="insert" value="登记罚款"></br>
     </form>
 	<a href='allfunction.php' target='finepage.php'><center>返回主页面</center></a></br>
 </body>
