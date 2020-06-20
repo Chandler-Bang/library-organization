@@ -137,10 +137,10 @@
                     name="bookPrice"><br><br>
             </div>
 			
-			<div >
+			<!-- <div >
                 <span class="Title" style="letter-spacing: 0.5em;">借书频率</span><input class="text" type="text"
                     name="frequ"><br><br>
-            </div>
+            </div> -->
 			
 			<div >
                 <span class="Title" style="letter-spacing: 0.5em;">书籍种类</span><input class="text" type="text"

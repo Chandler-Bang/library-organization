@@ -5,7 +5,7 @@ $importDate=$_REQUEST['importDate'];//导入日期
 $inLibStatus=$_REQUEST['inLibStatus'];//在馆状态
 $bookStatus=$_REQUEST['bookStatus'];//书籍状态
 $bookPrice=$_REQUEST['bookPrice'];//书籍价格(2位小数点)
-$frequ=$_REQUEST['frequency'];//借书频率
+$frequ=0;//借书频率
 $category=$_REQUEST['category'];//书籍种类
 
 $mysqli = mysqli_connect("localhost", "root", "", "library");
