@@ -15,8 +15,9 @@ $demand2="UPDATE book SET frequency=frequency+1 where bookNo='$bookNo'";
 if ($res1) {
     echo '<script>alert("借书成功");location="borrowpage.php";</script>';
     mysqli_query($mysqli,$demand2); //借书成功，借书频率+1
+    mysqli_close($mysqli);
 } else {
     echo '<script>alert("失败");location="borrowpage.php";</script>';
+    mysqli_close($mysqli);
 }
-mysqli_close($mysqli);
 ?>
