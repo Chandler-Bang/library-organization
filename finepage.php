@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>return books</title>
+    <title>add new book</title>
     <style>
         * {
             margin: 0px;
@@ -18,17 +18,17 @@
 
         h1 {
             text-align: center;
-            background-color: #892844;
+            background-color: red;
         }
 
         .box {
             border: 5px solid;
             border-radius: 10px;
-            top: 100px;
+            top: 50px;
             background-color: rgb(173, 169, 129);
             margin: 0px auto;
             width: 400px;
-            height: 300px;
+            height: 500px;
             position: relative;
         }
 
@@ -42,41 +42,34 @@
             padding: 10px;
 
         }
+
         .profile {
+
             color: white;
             font: 20px kaiti;
             margin: 5px 5px;
         }
 
-        .serialNumber {
-            position: relative;
-            /*top: 100px;*/
-        }
-
-        .readerNo {
-            position: relative;
-            /*top: 140px;*/
-        }
-
         .submit {
             position: absolute;
-            top: 200px;
+            top: 430px;
             left: 160px;
         }
 
         .text {
-            border: 1px;
+            border: 3px;
             height: 25px;
-            border-radius: 3px;
+            border-radius: 5px;
             position: absolute;
             left: 150px;
-            width: 200px;
+            width: 220px;
         }
 
         .Title {
             color: white;
-            font: 20px kaiti;
-            margin-left: 30px;
+            font: 15px kaiti;
+            margin-left: 20px;
+
         }
 
         .button {
@@ -84,7 +77,7 @@
             padding: 8px;
             background-color: #892844;
             color: white;
-            width: 100px;
+            width: 90px;
             border-radius: 6px;
         }
 
@@ -111,21 +104,30 @@
 
 <body>
     <div class="box">
-        <div class="head">归还图书</div>
+        <div class="head">记录罚款信息</div>
         <br>
-        <div class="profile">请输入归还相关信息:</div><br>
-        <form method="POST" action="bookReturn.php"><!--读者姓名没有通过表单去填写-->
-            <div class="serialNumber">
-                <span class="Title" style="letter-spacing: 0.5em;">流水号</span><input class="text" type="number"
-                    name="serialNumber"><br><br>
+        <div class="profile">请输入图书相关信息:</div><br>
+        <form method="POST" action="fine.php">
+		
+            <div>
+                <span class="Title" style="letter-spacing: 0.2em;">请输入流水号</span><input class="text" type="text"name="serialnumber"><br><br>
             </div>
-            <div class="readerNo">
-                <span class="Title">读者编号</span><input class="text" type="text" name="readerNo">
+			
+            <div>
+                <span class="Title" style="letter-spacing: 0.2em;">请进行违约备注</span><input class="text" type="text" name="note"><br><br>
             </div>
+			
+			<div >
+                <span class="Title" style="letter-spacing: 0.2em;">请输入罚款金额</span><input class="text" type="text"
+                    name="fine"><br><br>
+            </div>
+			
+		
+			
             <div class="submit"><input class="button" type="submit" name="button" value="提交"></div>
         </form>
     </div>
-    <div class="back"><a href="main.php">回到首页</a></div>
+    <div class="back"><a href="main.php">返回首页</a></div>
 </body>
 
 </html>

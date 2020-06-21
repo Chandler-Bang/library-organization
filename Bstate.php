@@ -40,7 +40,7 @@
 
 <body>
     <div class="head">图书在馆状态</div>
-    <form method="POST" action="Bstate_search.php"><!--action有待修改 -->
+    <form method="POST" action="Bstate_search.php">
         <span class="select" style="letter-spacing: 0px;"><input type="radio" name="type" value="bookid"
                 checked="checked" id="bookid"><label for="bookid">图书编号</label></span>
         <span class="select"><input type="radio" name="type" value="bookname" id="bookname"><label

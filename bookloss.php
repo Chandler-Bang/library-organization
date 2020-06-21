@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>return books</title>
+    <title>book loss</title>
     <style>
         * {
             margin: 0px;
@@ -18,7 +18,7 @@
 
         h1 {
             text-align: center;
-            background-color: #892844;
+            background-color: red;
         }
 
         .box {
@@ -42,18 +42,20 @@
             padding: 10px;
 
         }
+
         .profile {
+
             color: white;
             font: 20px kaiti;
             margin: 5px 5px;
         }
 
-        .serialNumber {
+        .bookNo {
             position: relative;
             /*top: 100px;*/
         }
 
-        .readerNo {
+        .lossResult {
             position: relative;
             /*top: 140px;*/
         }
@@ -65,9 +67,9 @@
         }
 
         .text {
-            border: 1px;
+            border: 3px;
             height: 25px;
-            border-radius: 3px;
+            border-radius: 5px;
             position: absolute;
             left: 150px;
             width: 200px;
@@ -77,6 +79,7 @@
             color: white;
             font: 20px kaiti;
             margin-left: 30px;
+
         }
 
         .button {
@@ -84,7 +87,7 @@
             padding: 8px;
             background-color: #892844;
             color: white;
-            width: 100px;
+            width: 90px;
             border-radius: 6px;
         }
 
@@ -111,16 +114,16 @@
 
 <body>
     <div class="box">
-        <div class="head">归还图书</div>
+        <div class="head">录入图书损失信息</div>
         <br>
-        <div class="profile">请输入归还相关信息:</div><br>
-        <form method="POST" action="bookReturn.php"><!--读者姓名没有通过表单去填写-->
-            <div class="serialNumber">
-                <span class="Title" style="letter-spacing: 0.5em;">流水号</span><input class="text" type="number"
-                    name="serialNumber"><br><br>
+        <div class="profile">请输入损失相关信息:</div><br>
+        <form method="POST" action="loss.php">
+            <div class="bookNo">
+                <span class="Title" style="letter-spacing: 0.5em;">图书编号</span><input class="text" type="text"
+                    name="bookNo"><br><br>
             </div>
-            <div class="readerNo">
-                <span class="Title">读者编号</span><input class="text" type="text" name="readerNo">
+            <div class="lossResult">
+                <span class="Title" style="letter-spacing: 0.5em;">损失结果</span><input class="text" type="text" name="lossResult">
             </div>
             <div class="submit"><input class="button" type="submit" name="button" value="提交"></div>
         </form>

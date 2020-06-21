@@ -1,10 +1,10 @@
 <?php
 $type=$_POST['type']; // 搜索类型传入本页面
 $mysqli = mysqli_connect("localhost", "root", "", "library");
-if (mysqli_connect_errno($mysqli)) {
+if (mysqli_connect_errno()) {
     die("Failed to connect to MySQL: (" . mysqli_connect_errno() . ") " . mysqli_connect_error());
-} else
-	echo 'sucessful to connect to MySQL!<br/>';
+} 
+	// echo 'sucessful to connect to MySQL!<br/>';
 // 输出表格
 echo "<table border='4px' cellpadding='15px' cellspacing='0px'>";
 if($type=='hot')
@@ -19,7 +19,7 @@ if($type=='latest')
 	echo"<tr align='center'>新书书单</tr>";
 	echo"<tr><td>图书名</td><td>图书类别</td><td>上架时间</td></tr>";
 }
-if($res=mysqli_query($conn,$str))
+if($res=mysqli_query($mysqli,$str))
 {
 	while($row=mysqli_fetch_row($res))
 	{
@@ -29,7 +29,7 @@ if($res=mysqli_query($conn,$str))
 
 echo "</table>";
 // 表格输出完毕
-echo "<a href='recommend.php' target='recommend01.php'>返回上一页面</a></br>";
-echo "<a href='main.php' target='recommend01.php'>返回主页面</a></br>";
-mysqli_close($conn);  //还差美化界面 -> TODO: 等测试阶段进行
+echo "<a href='recommend.php' target='recommend_backend.php'>返回上一页面</a></br>";
+echo "<a href='main.php' target='recommend_backend.php'>回到首页</a></br>";
+mysqli_close($mysqli);  //还差美化界面 -> TODO: 等测试阶段进行
 ?>
