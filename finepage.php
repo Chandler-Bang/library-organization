@@ -106,7 +106,7 @@
     <div class="box">
         <div class="head">记录罚款信息</div>
         <br>
-        <div class="profile">请输入图书相关信息:</div><br>
+      
         <form method="POST" action="fine.php">
 		
             <div>
