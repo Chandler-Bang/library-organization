@@ -10,7 +10,7 @@ if (mysqli_connect_errno()) {
 } 
 // 第一步: 判断图书是否存在
 $bookValidate = "SELECT bookNo FROM book where bookNo = '$bookNo'";
-if(!mysqli_query($mysqli)){
+if(!mysqli_query($mysqli,$bookValidate)){
     mysqli_close($mysqli);
     echo '<script>alert("操作失败，可能此书不存在");location="bookloss.php";</script>';
 }
@@ -18,7 +18,7 @@ if(!mysqli_query($mysqli)){
 $inLibStatus = ($lossResult=='normal')?'available':'unavailable';
 $statusUpdate = "UPDATE book set inLibStatus = '$inLibStatus' where bookNo = '$bookNo'";
 if(!mysqli_query($mysqli,$statusUpdate)){
-mysqli_close($mysqli);
+    mysqli_close($mysqli);
     echo '<script>alert("图书状态修改失败");location="bookloss.php";</script>';
 }
 // 第三步: 登记损失结果

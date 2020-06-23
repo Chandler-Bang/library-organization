@@ -1,7 +1,7 @@
 <?php
 $id=$_REQUEST['type'];//接收id，值分别为bookname,bookid(bookNo)
 $bookNo=$_REQUEST['bookNo'];
-$conn=mysqli_connect('localhost','root','q123654987');
+$conn=mysqli_connect('localhost','root','');
 mysqli_select_db($conn,'library');
 // 开始输出表格
 echo "<table border='4px' cellpadding='15px' cellspacing='0px'>";
