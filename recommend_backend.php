@@ -9,13 +9,13 @@ if (mysqli_connect_errno()) {
 echo "<table border='4px' cellpadding='15px' cellspacing='0px'>";
 if($type=='hot')
 {
-	$str="select bookName,catagory,frequency from bookborrow order by frequency DESC limit 10";//排名前十的图书
+	$str="select bookName,category,frequency from book order by frequency DESC limit 10";//排名前十的图书
 	echo"<tr><td align='center'>热书书单</td></tr>";
 	echo"<tr><td>图书名</td><td>图书类别</td><td>频度</td></tr>";
 }
 if($type=='latest')
 {
-	$str="select bookName,catagory,inportData from booklist order by importData";
+	$str="select bookName,category,importDate from book order by importDate";
 	echo"<tr align='center'>新书书单</tr>";
 	echo"<tr><td>图书名</td><td>图书类别</td><td>上架时间</td></tr>";
 }
@@ -23,7 +23,7 @@ if($res=mysqli_query($mysqli,$str))
 {
 	while($row=mysqli_fetch_row($res))
 	{
-		echo '<tr><td>$row[0]</td><td>$row[1]</td><td>$row[2]</td></tr>';
+		echo "<tr><td>$row[0]</td><td>$row[1]</td><td>$row[2]</td></tr>";
 	}
 }
 
