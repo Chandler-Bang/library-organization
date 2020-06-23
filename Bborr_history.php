@@ -114,7 +114,7 @@
         <form method="POST" action="Bborr_historyS.php">
 		
             <div class="bookNo">
-                <span class="Title" style="letter-spacing: 0.2em;">请输入图书编号</span><input class="text" type="text"name="readerno"><br><br>
+                <span class="Title" style="letter-spacing: 0.2em;">请输入图书编号</span><input class="text" type="text"name="bookno"><br><br>
             </div>
 			
            
