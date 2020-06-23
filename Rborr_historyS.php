@@ -2,7 +2,7 @@
 $id=$_REQUEST['readerno'];//接收id，为读者输入的读者号
 
 $conn=mysqli_connect('localhost','root','');
-mysqli_select_db($conn,'test');//数据库为test
+mysqli_select_db($conn,'library');//数据库为library
 if($id)
 {
 	$str="select readerNo,readerName,bookNo,bookName,borrowDate,returnDate from borrowBook,returnBook where readerNo='$id' ";//按读者号查询某图书的借阅历史
@@ -14,7 +14,7 @@ if($res=mysqli_query($conn,$str))  //这个和mysql_query参数有一定的顺�
 {
 	while($row=mysqli_fetch_row($res))
     {
-        echo '<tr><td>$row[0]</td><td>$row[1]</td><td>$row[2]</td><td>$row[3]</td><td>$row[4]</td><td>$row[5]</td></tr>';
+        echo "<tr><td>$row[0]</td><td>$row[1]</td><td>$row[2]</td><td>$row[3]</td><td>$row[4]</td><td>$row[5]</td></tr>";
     }
 }
 echo "</table>";
