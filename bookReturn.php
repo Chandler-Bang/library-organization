@@ -12,7 +12,6 @@ if (mysqli_connect_errno()) {
 // 第一步: 判断图书是否存在
 $bookCheck = "SELECT bookNo from borrowbook where serialNumber = '$serialNum'";
 $checkQuery = mysqli_query($mysqli,$bookCheck);
-echo $bookNo;
 if(!$checkQuery){
     mysqli_close($mysqli); // 图书不存在，停止查询
     echo '<script>alert("抱歉，此图书可能不存在");location="returnpage.php";</script>';
