@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>add new book</title>
+    <title>罚款登记</title>
     <style>
         * {
             margin: 0px;
@@ -110,11 +110,11 @@
         <form method="POST" action="fine.php">
 		
             <div>
-                <span class="Title" style="letter-spacing: 0.2em;">请输入流水号</span><input class="text" type="text"name="serialnumber"><br><br>
+                <span class="Title" style="letter-spacing: 0.2em;">请输入流水号</span><input class="text" type="text"name="serialNumber"><br><br>
             </div>
 			
             <div>
-                <span class="Title" style="letter-spacing: 0.2em;">请进行违约备注</span><input class="text" type="text" name="note"><br><br>
+                <span class="Title" style="letter-spacing: 0.2em;">请进行违约备注</span><input class="text" type="text" name="lossResult"><br><br>
             </div>
 			
 			<div >

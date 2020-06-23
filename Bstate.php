@@ -45,7 +45,7 @@
                 checked="checked" id="bookid"><label for="bookid">图书编号</label></span>
         <span class="select"><input type="radio" name="type" value="bookname" id="bookname"><label
                 for="bookname">图书名称</label></span><br>
-		请输入相应信息：<input name='bookstate' type='text'/></br>
+		请输入相应信息：<input name='bookNo' type='text'/></br>
 		<input class="button" type="submit" name="search" value="查询"></br>
     </form>
 </body>

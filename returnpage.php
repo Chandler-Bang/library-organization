@@ -130,7 +130,7 @@
                 <select name="lossResult" id="lossResult" class="text">
                     <!-- check bookStatus in ('normal','outdated','broken','lost','others'), -->
                     <option value="normal">正常</option>
-                    <option vaue="outdated">过时</option>
+                    <option value="outdated">过时</option>
                     <option value="broken">损坏</option>
                     <option value="lost">丢失</option>
                     <option value="others">其他</option>
