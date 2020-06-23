@@ -28,7 +28,7 @@
             background-color: rgb(173, 169, 129);
             margin: 0px auto;
             width: 400px;
-            height: 500px;
+            height: 210px;
             position: relative;
         }
 
@@ -52,7 +52,7 @@
 
         .submit {
             position: absolute;
-            top: 430px;
+            top: 150px;
             left: 160px;
         }
 
@@ -98,6 +98,10 @@
             border-radius: 2px;
             padding: 5px;
         }
+        .bookNo {
+            position: absolute;
+            top: 100px
+        }
     </style>
 </head>
 
@@ -109,7 +113,7 @@
         
         <form method="POST" action="Bborr_historyS.php">
 		
-            <div>
+            <div class="bookNo">
                 <span class="Title" style="letter-spacing: 0.2em;">请输入图书编号</span><input class="text" type="text"name="readerno"><br><br>
             </div>
 			
