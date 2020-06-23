@@ -57,10 +57,13 @@
             position: relative;
             /*top: 140px;*/
         }
+        .bookStatus {
+            position: relative;
+        }
 
         .submit {
             position: absolute;
-            top: 200px;
+            top: 250px;
             left: 160px;
         }
 
@@ -121,6 +124,17 @@
             </div>
             <div class="readerNo">
                 <span class="Title">读者编号</span><input class="text" type="text" name="readerNo">
+            </div><br>
+            <div class="bookStatus">
+                <span class="Title">损坏结果</span>
+                <select name="lossResult" id="lossResult" class="text">
+                    <!-- check bookStatus in ('normal','outdated','broken','lost','others'), -->
+                    <option value="normal">正常</option>
+                    <option vaue="outdated">过时</option>
+                    <option value="broken">损坏</option>
+                    <option value="lost">丢失</option>
+                    <option value="others">其他</option>
+                </select>
             </div>
             <div class="submit"><input class="button" type="submit" name="button" value="提交"></div>
         </form>
@@ -129,4 +143,3 @@
 </body>
 
 </html>
-<?php

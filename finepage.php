@@ -28,7 +28,7 @@
             background-color: rgb(173, 169, 129);
             margin: 0px auto;
             width: 400px;
-            height: 500px;
+            height: 260px;
             position: relative;
         }
 
@@ -52,7 +52,7 @@
 
         .submit {
             position: absolute;
-            top: 430px;
+            top: 200px;
             left: 160px;
         }
 
@@ -106,7 +106,7 @@
     <div class="box">
         <div class="head">记录罚款信息</div>
         <br>
-        <div class="profile">请输入图书相关信息:</div><br>
+      
         <form method="POST" action="fine.php">
 		
             <div>

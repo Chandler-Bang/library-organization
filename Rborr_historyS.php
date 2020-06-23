@@ -17,12 +17,8 @@ if($res=mysqli_query($conn,$str))  //这个和mysql_query参数有一定的顺�
         echo '<tr><td>$row[0]</td><td>$row[1]</td><td>$row[2]</td><td>$row[3]</td><td>$row[4]</td><td>$row[5]</td></tr>';
     }
 }
-
 echo "</table>";
-echo "<a href='Rborr_history.php' target='Rborr_historyS.php'>返回上一页面</a></br>";
-echo "<a href='main.php' target='Rborr_historyS.php'>回到首页</a></br>";
+echo "<a href='Rborr_history.php' >返回上一页面</a></br>";
+echo "<a href='main.php'>回到首页</a></br>";
 mysqli_close($conn);  //还差美化界面
-
-	
-
 ?>
