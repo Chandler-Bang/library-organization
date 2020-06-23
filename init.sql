@@ -7,9 +7,9 @@ CREATE TABLE book
     bookName varchar(20)not null ,
     importDate date not null ,
     inLibStatus varchar(10) not null
-        check inLibStatus in ('available','unavailable'),
-    bookStatus varchar(10) not null 
-        check bookStatus in ('normal','outdated','broken','lost','others'),
+        check (inLibStatus in ('available','unavailable','locked')),
+    -- bookStatus varchar(10) not null 
+    --     check bookStatus in ('normal','outdated','broken','lost','others'),
     bookPrice float(2) not null ,
     frequency int not null ,
     category varchar(20) not null

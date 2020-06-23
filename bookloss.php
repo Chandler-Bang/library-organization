@@ -28,7 +28,7 @@
             background-color: rgb(173, 169, 129);
             margin: 0px auto;
             width: 400px;
-            height: 300px;
+            height: 280px;
             position: relative;
         }
 
@@ -62,7 +62,7 @@
 
         .submit {
             position: absolute;
-            top: 200px;
+            top: 210px;
             left: 160px;
         }
 
@@ -123,7 +123,15 @@
                     name="bookNo"><br><br>
             </div>
             <div class="lossResult">
-                <span class="Title" style="letter-spacing: 0.5em;">损失结果</span><input class="text" type="text" name="lossResult">
+                <span class="Title" style="letter-spacing: 0.5em;">损失结果</span>
+                <select name="lossResult" id="lossResult" class="text">
+            <!-- check bookStatus in ('normal','outdated','broken','lost','others'), -->
+                <option value="normal">正常</option>
+                <option vaue="outdated">过时</option>
+                <option value="broken">损坏</option>
+                <option value="lost">丢失</option>
+                <option value="others">其他</option>
+                </select>
             </div>
             <div class="submit"><input class="button" type="submit" name="button" value="提交"></div>
         </form>
