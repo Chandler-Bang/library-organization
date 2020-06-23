@@ -6,7 +6,7 @@ CREATE TABLE book
     bookNo varchar(10) primary key,
     bookName varchar(20)not null ,
     importDate date not null ,
-    inLibStatus enum('available','unavailable','locked') default 'available'; 
+    inLibStatus enum('available','unavailable','locked') default 'available', 
     bookPrice float(2) not null ,
     frequency int not null ,
     category varchar(20) not null
