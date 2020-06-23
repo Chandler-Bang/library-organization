@@ -3,7 +3,7 @@ $id=$_POST['readerno'];//接收id，为读者输入的读者号
 
 $mysqli = mysqli_connect("localhost", "root", "", "library");
 
-	$str="select book.bookNo,book.bookName,reader.readerNo,reader.readerName,borrowDate,returnDate from book left join borrowbook on book.bookNo=borrowbook.bookNo left join returnbook on borrowbook.bookNo=returnbook.bookNo left join reader on returnbook.readerNo=reader.readerNo where reader.readerNo='$id' ";  //按读者号查询某图书的借阅历史
+	$str="select book.bookNo,book.bookName,reader.readerNo,reader.readerName,borrowDate,returnDate from book left join borrowbook on book.bookNo=borrowbook.bookNo left join returnbook on borrowbook.bookNo=returnbook.bookNo left join reader on borrowbook.readerNo=reader.readerNo where reader.readerNo='$id' ";  //按读者号查询某图书的借阅历史
 	echo "<table border='4px' cellpadding='15px' cellspacing='0px'>";
 echo"<tr align='center'>查询结果</tr>";
 echo"<tr><td>图书编号</td><td>图书名</td><td>读者号</td><td>读者名</td><td>借阅日期</td><td>还书日期</td></tr>";
