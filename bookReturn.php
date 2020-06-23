@@ -34,7 +34,7 @@ if($inLibStatus!='available'){
 $returnRecord = "INSERT INTO returnBook values($serialNum,'$readerNo','$bookNo','$returnDate')";
 mysqli_query($mysqli,$returnRecord);
 // 第五步: 修改图书状态，解除锁定
-$bookStatus = "UPDATE book SET inLibStatus='inLibStatus' where bookNo = '$bookNo'";
+$bookStatus = "UPDATE book SET inLibStatus='$inLibStatus' where bookNo = '$bookNo'";
 $res = mysqli_query($mysqli,$bookStatus);
 if($res){
     mysqli_close($mysqli);
