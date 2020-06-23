@@ -16,7 +16,7 @@ if(!$statusQuery){
     echo '<script>alert("借书失败，可能您输入的图书编号并不存在");location="borrowpage.php";</script>';
 }
 $status = mysqli_fetch_row($statusQuery);
-if($status!='available'){
+if($status[0]!='available'){
     echo '<script>alert("借书失败，此书现在处于不可借状态");location="borrowpage.php";</script>';
 }
 // 第二步: 修改图书状态（图书改为锁定状态，阻止冲突）
