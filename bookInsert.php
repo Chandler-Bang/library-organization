@@ -18,6 +18,7 @@ if ($res) { //跳转页面
     mysqli_close($mysqli); //查询已经结束，在这里关闭连接
     echo '<script>alert("新书录入成功");location="addnewbook.php";</script>';
 } else {
+    mysqli_close($mysqli);
     echo '<script>alert("新书录入失败");location="addnewbook.php";</script>';
 }
 ?>

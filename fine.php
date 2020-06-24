@@ -21,8 +21,8 @@ if ($res) {
     mysqli_close($mysqli);
     echo '<script>alert("罚款结果录入成功");location="finepage.php";</script>';
 } else {
-    echo '<script>alert("罚款结果录入失败");location="finepage.php";</script>';
     mysqli_close($mysqli);
+    echo '<script>alert("罚款结果录入失败");location="finepage.php";</script>';
 }
 mysqli_free_result($res);
 mysqli_close($mysqli);
