@@ -73,6 +73,7 @@
             position: absolute;
             left: 150px;
             width: 200px;
+            background:#f2eee1;
         }
 
         .Title {

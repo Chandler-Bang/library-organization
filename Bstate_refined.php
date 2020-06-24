@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>推荐书单</title>
+    <title>图书状态查询</title>
     <style>
         * {
             margin: 0px;
@@ -28,7 +28,7 @@
             background-color: rgb(173, 169, 129);
             margin: 0px auto;
             width: 400px;
-            height: 210px;
+            height: 280px;
             position: relative;
         }
 
@@ -52,8 +52,8 @@
 
         .submit {
             position: absolute;
-            top: 150px;
-            left: 144px;
+            top: 200px;
+            left: 150px;
         }
 
         .text {
@@ -91,7 +91,10 @@
             top: 95%;
             left: 10px;
         }
-
+        .info{
+            position: absolute;
+            top: 100px;
+        }
         a {
             text-decoration: none;
             background-color: darkgoldenrod;
@@ -101,8 +104,8 @@
         }
         .option {
             position: absolute;
-            top: 95px;
-            left: 65px;
+            top: 150px;
+            left: 80px;
         }
         [type="radio"]{
             opacity:0;
@@ -162,16 +165,16 @@
 
 <body>
     <div class="box">
-        <div class="head">推荐书单</div>
-        <br>
-        
-        <form method="POST" action="recommend_backend.php">
-		
+        <div class="head">图书馆在馆状态</div>
+        <form method="POST" action="Bstate_search.php">
             <div class="option">
-                <span class="select" style="letter-spacing: 32px;"><input type="radio" name="type" value="hot"
-                    checked="checked" id="hot"><label for="hot">热度</label></span>
-                <span class="select"><input type="radio" name="type" value="latest" id="latest"><label
-                    for="latest">最新入库</label></span><br>
+            <span class="select" style="letter-spacing: 0px;"><input type="radio" name="type" value="bookid"
+                checked="checked" id="bookid"><label for="bookid">图书编号</label></span>
+            <span class="select"><input type="radio" name="type" value="bookname" id="bookname"><label
+                for="bookname">图书名称</label></span>
+            </div>
+            <div class="info">
+                <span class="Title" style="letter-spacing: 0.5em;">输入对应信息</span><input class="text" type="text"name="bookNo"><br><br>
             </div>
             <div class="submit"><input class="button" type="submit" name="button" value="生成书单"></div>
         </form>
