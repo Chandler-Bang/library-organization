@@ -70,7 +70,7 @@ if($type=='hot')
 }
 if($type=='latest')
 {
-	$str="select bookName,category,importDate from book order by importDate";
+	$str="select bookName,category,importDate from book order by importDate DESC limit 10";
 	echo"<div class='head'><br>新书书单</div>";
 	echo"<tr><td>图书名</td><td>图书类别</td><td>上架时间</td></tr>";
 }
