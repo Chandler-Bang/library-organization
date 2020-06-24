@@ -75,4 +75,4 @@ CREATE TABLE loss
 CREATE INDEX book_IND on book (bookNo);
 CREATE INDEX reader_IND on reader (readerNo);
  
-INSERT INTO admin values('super','super','super'),values('normal','normal','normal');
+INSERT INTO `admin` (`adminname`, `password`, `level`) VALUES ('normal', 'normal', 'normal'), ('super', 'super', 'super');
