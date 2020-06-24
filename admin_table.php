@@ -43,6 +43,9 @@
 		.bottom {
 			text-align: center;
 		}
+		.back {
+			text-align:center;
+		}
 	</style>
 </head>
 
@@ -63,7 +66,7 @@
 		}
 	}
 	echo "</table>";
-	echo "<a href='main.su.php'><br>回到首页</a></br></div>";
+	echo "<div class='back'><a href='main.su.php'><br>回到首页</a></br></div>";
 	mysqli_close($mysqli);  //还差美化界面
 	?>
 </body>
