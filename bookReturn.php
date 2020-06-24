@@ -45,7 +45,7 @@ if($res){
             if(r==true){
                 location="finepage.php";
             }else{
-                location="bookReturn.php";
+                location="returnpage.php";
             }
           </script>'; 
 } else {
