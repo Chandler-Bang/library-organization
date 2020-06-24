@@ -87,7 +87,7 @@ while($row=mysqli_fetch_row($res)){
 
 echo "</table>";
 // 表格输出完毕
-echo "<div class='bottom'><br><a href='recommend.php' >返回上一页面</a></br>";
+echo "<div class='bottom'><br><a href='fine_loss_record.php' >返回上一页面</a></br>";
 echo "<a href='main.php' ><br>回到首页</a></br></div>";
 mysqli_close($mysqli);  
 ?>

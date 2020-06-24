@@ -168,7 +168,7 @@
         <form method="POST" action="fine_loss_record_backend.php">
             <div class="option">
                 <span class="select" style="letter-spacing: 32px;"><input type="radio" name="type" value="fine"
-                    checked="checked" fine="hot"><label for="fine">罚款</label></span>
+                    checked="checked" id="fine"><label for="fine">罚款</label></span>
                 <span class="select" style="letter-spacing: 32px;"><input type="radio" name="type" value="loss" id="loss"><label
                     for="loss">损失</label></span><br>
             </div>
