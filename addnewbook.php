@@ -117,30 +117,12 @@
                 <span class="Title" style="letter-spacing: 0.5em;">图书名</span><input class="text" type="text" name="bookName"><br><br>
             </div>
 			
-			<!-- <div >
-                <span class="Title" style="letter-spacing: 0.5em;">登记日期</span><input class="text" type="text"
-                    name="importDate"><br><br>
-            </div> -->
-			
-			<!-- <div>
-                <span class="Title" style="letter-spacing: 0.5em;">在馆状态</span><input class="text" type="text"
-                    name="inLibStatus"><br><br>
-            </div>
-			
-			<div >
-                <span class="Title" style="letter-spacing: 0.5em;">书籍状态</span><input class="text" type="text"
-                    name="bookStatus"><br><br>
-            </div> -->
+
 			
 			<div >
                 <span class="Title" style="letter-spacing: 0.5em;">书籍价格</span><input class="text" type="text"
                     name="bookPrice"><br><br>
             </div>
-			
-			<!-- <div >
-                <span class="Title" style="letter-spacing: 0.5em;">借书频率</span><input class="text" type="text"
-                    name="frequ"><br><br>
-            </div> -->
 			
 			<div >
                 <span class="Title" style="letter-spacing: 0.5em;">书籍种类</span><input class="text" type="text"

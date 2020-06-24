@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>add new book</title>
+    <title>查询图书借阅历史</title>
     <style>
         * {
             margin: 0px;
