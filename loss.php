@@ -30,4 +30,3 @@ if ($res) { //跳转页面
     echo '<script>alert("损失结果录入失败");location="bookloss.php";</script>';
 }
 mysqli_close($mysqli);
-?>

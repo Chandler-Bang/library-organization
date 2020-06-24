@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--登陆界面，主题色是 #892844-->
+
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href=
-    "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="login.css">
@@ -12,32 +12,28 @@
 </head>
 
 <body>
-<form action="adminInsert.php" method="post">
-    <div class="signup-box">
-        <h1>注册</h1>
+    <form action="adminInsert.php" method="post">
+        <div class="signup-box">
+            <h1>注册</h1>
 
-        <div class="textbox">
-            <i class="fa fa-user" aria-hidden="true"></i>
-            <input type="text" placeholder="用户名"
-                   name="adminname" value="">
-        </div>
+            <div class="textbox">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <input type="text" placeholder="用户名" name="adminname" value="">
+            </div>
 
-        <div class="textbox">
-            <i class="fa fa-lock" aria-hidden="true"></i>
-            <input type="password" placeholder="密码"
-                   name="password" value="">
+            <div class="textbox">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+                <input type="password" placeholder="密码" name="password" value="">
+            </div>
+            <div class="level">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="select" style="letter-spacing: 0px;"><input type="radio" name="level" value="normal" checked="checked" id="normal"><label for="normal">Normal</label></span>
+                <span class="select"><input type="radio" name="level" value="super" id="super"><label for="super">Super</label></span>
+            </div>
+            <input class="button" type="submit" name="signup" value="注册">
         </div>
-        <div class="level">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <span class="select" style="letter-spacing: 0px;"><input type="radio" name="level" value="normal"
-                checked="checked" id="normal"><label for="normal">Normal</label></span>
-            <span class="select"><input type="radio" name="level" value="super" id="normal"><label
-                for="normal">Super</label></span>            
-        </div>
-        <input class="button" type="submit"
-               name="signup" value="注册">
-    </div>
-</form>
+    </form>
+    <div class="back"><a href="main.php">回到首页</a></div>
 </body>
 
 </html>
@@ -57,7 +53,6 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        color: ;
     }
 
     .signup-box h1 {
@@ -69,7 +64,8 @@
         padding: 13px;
     }
 
-    .textbox ,.level{
+    .textbox,
+    .level {
         width: 100%;
         overflow: hidden;
         font-size: 20px;
@@ -105,6 +101,13 @@
         cursor: pointer;
         margin: 12px 0;
     }
+
+    .back {
+        position: absolute;
+        top: 95%;
+        left: 10px;
+    }
+
     /* .level {
         border: none;
         font-size: 18px;

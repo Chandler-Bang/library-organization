@@ -63,7 +63,7 @@
             position: absolute;
             left: 150px;
             width: 220px;
-            background:#f2eee1;
+            background: #f2eee1;
         }
 
         .Title {
@@ -107,24 +107,23 @@
     <div class="box">
         <div class="head">记录罚款信息</div>
         <br>
-      
+
         <form method="POST" action="fine.php">
-		
+
             <div>
-                <span class="Title" style="letter-spacing: 0.2em;">请输入流水号</span><input class="text" type="text"name="serialNumber"><br><br>
+                <span class="Title" style="letter-spacing: 0.2em;">请输入流水号</span><input class="text" type="text" name="serialNumber"><br><br>
             </div>
-			
+
             <div>
                 <span class="Title" style="letter-spacing: 0.2em;">请进行违约备注</span><input class="text" type="text" name="lossResult"><br><br>
             </div>
-			
-			<div >
-                <span class="Title" style="letter-spacing: 0.2em;">请输入罚款金额</span><input class="text" type="text"
-                    name="fine"><br><br>
+
+            <div>
+                <span class="Title" style="letter-spacing: 0.2em;">请输入罚款金额</span><input class="text" type="text" name="fine"><br><br>
             </div>
-			
-		
-			
+
+
+
             <div class="submit"><input class="button" type="submit" name="button" value="提交"></div>
         </form>
     </div>

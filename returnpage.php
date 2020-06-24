@@ -42,6 +42,7 @@
             padding: 10px;
 
         }
+
         .profile {
             color: white;
             font: 20px kaiti;
@@ -57,6 +58,7 @@
             position: relative;
             /*top: 140px;*/
         }
+
         .bookStatus {
             position: relative;
         }
@@ -74,7 +76,7 @@
             position: absolute;
             left: 150px;
             width: 200px;
-            background:#f2eee1;
+            background: #f2eee1;
         }
 
         .Title {
@@ -118,10 +120,10 @@
         <div class="head">归还图书</div>
         <br>
         <div class="profile">请输入归还相关信息:</div><br>
-        <form method="POST" action="bookReturn.php"><!--读者姓名没有通过表单去填写-->
+        <form method="POST" action="bookReturn.php">
+            <!--读者姓名没有通过表单去填写-->
             <div class="serialNumber">
-                <span class="Title" style="letter-spacing: 0.5em;">流水号</span><input class="text" type="number"
-                    name="serialNumber"><br><br>
+                <span class="Title" style="letter-spacing: 0.5em;">流水号</span><input class="text" type="number" name="serialNumber"><br><br>
             </div>
             <div class="readerNo">
                 <span class="Title">读者编号</span><input class="text" type="text" name="readerNo">

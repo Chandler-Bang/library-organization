@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--登陆界面，主题色是 #892844-->
+
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href=
-    "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="login.css">
@@ -12,26 +12,23 @@
 </head>
 
 <body>
-<form action="validate.php" method="post">
-    <div class="login-box">
-        <h1>登录</h1>
+    <form action="validate.php" method="post">
+        <div class="login-box">
+            <h1>登录</h1>
 
-        <div class="textbox">
-            <i class="fa fa-user" aria-hidden="true"></i>
-            <input type="text" placeholder="用户名"
-                   name="adminname" value="">
+            <div class="textbox">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <input type="text" placeholder="用户名" name="adminname" value="">
+            </div>
+
+            <div class="textbox">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+                <input type="password" placeholder="密码" name="password" value="">
+            </div>
+
+            <input class="button" type="submit" name="login" value="登录">
         </div>
-
-        <div class="textbox">
-            <i class="fa fa-lock" aria-hidden="true"></i>
-            <input type="password" placeholder="密码"
-                   name="password" value="">
-        </div>
-
-        <input class="button" type="submit"
-               name="login" value="登录">
-    </div>
-</form>
+    </form>
 </body>
 
 </html>
@@ -51,7 +48,6 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        color: ;
     }
 
     .login-box h1 {

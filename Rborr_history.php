@@ -63,7 +63,7 @@
             position: absolute;
             left: 155px;
             width: 220px;
-            background:#f2eee1;
+            background: #f2eee1;
         }
 
         .Title {
@@ -99,6 +99,7 @@
             border-radius: 2px;
             padding: 5px;
         }
+
         .readerNo {
             position: absolute;
             top: 100px
@@ -111,16 +112,16 @@
     <div class="box">
         <div class="head">查询读者借阅历史</div>
         <br>
-        
+
         <form method="POST" action="Rborr_historyS.php">
-		
+
             <div class="readerNo">
-                <span class="Title" style="letter-spacing: 0.2em;">请输入读者号</span><input class="text" type="text"name="readerno"><br><br>
+                <span class="Title" style="letter-spacing: 0.2em;">请输入读者号</span><input class="text" type="text" name="readerno"><br><br>
             </div>
-			
-           
-		
-			
+
+
+
+
             <div class="submit"><input class="button" type="submit" name="button" value="查询"></div>
         </form>
     </div>

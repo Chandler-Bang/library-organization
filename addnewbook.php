@@ -63,7 +63,7 @@
             position: absolute;
             left: 150px;
             width: 220px;
-            background:#f2eee1;
+            background: #f2eee1;
         }
 
         .Title {
@@ -109,27 +109,25 @@
         <br>
         <div class="profile">请输入图书相关信息:</div><br>
         <form method="POST" action="bookInsert.php">
-		
+
             <div>
-                <span class="Title" style="letter-spacing: 0.5em;">图书编号</span><input class="text" type="text"name="bookNo"><br><br>
+                <span class="Title" style="letter-spacing: 0.5em;">图书编号</span><input class="text" type="text" name="bookNo"><br><br>
             </div>
-			
+
             <div>
                 <span class="Title" style="letter-spacing: 0.5em;">图书名</span><input class="text" type="text" name="bookName"><br><br>
             </div>
-			
 
-			
-			<div >
-                <span class="Title" style="letter-spacing: 0.5em;">书籍价格</span><input class="text" type="text"
-                    name="bookPrice"><br><br>
+
+
+            <div>
+                <span class="Title" style="letter-spacing: 0.5em;">书籍价格</span><input class="text" type="text" name="bookPrice"><br><br>
             </div>
-			
-			<div >
-                <span class="Title" style="letter-spacing: 0.5em;">书籍种类</span><input class="text" type="text"
-                    name="category">
+
+            <div>
+                <span class="Title" style="letter-spacing: 0.5em;">书籍种类</span><input class="text" type="text" name="category">
             </div>
-			
+
             <div class="submit"><input class="button" type="submit" name="button" value="提交"></div>
         </form>
     </div>

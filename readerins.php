@@ -73,7 +73,7 @@
             position: absolute;
             left: 150px;
             width: 200px;
-            background:#f2eee1;
+            background: #f2eee1;
         }
 
         .Title {
@@ -120,8 +120,7 @@
         <div class="profile">请输入读者相关信息:</div><br>
         <form method="POST" action="readerInsert.php">
             <div class="readerNo">
-                <span class="Title" style="letter-spacing: 0.5em;">读者号</span><input class="text" type="text"
-                    name="readerNo"><br><br>
+                <span class="Title" style="letter-spacing: 0.5em;">读者号</span><input class="text" type="text" name="readerNo"><br><br>
             </div>
             <div class="readername">
                 <span class="Title">读者姓名</span><input class="text" type="text" name="readerName">

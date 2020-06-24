@@ -73,7 +73,7 @@
             position: absolute;
             left: 150px;
             width: 200px;
-            background:#f2eee1;
+            background: #f2eee1;
         }
 
         .Title {
@@ -120,18 +120,17 @@
         <div class="profile">请输入损失相关信息:</div><br>
         <form method="POST" action="loss.php">
             <div class="bookNo">
-                <span class="Title" style="letter-spacing: 0.5em;">图书编号</span><input class="text" type="text"
-                    name="bookNo"><br><br>
+                <span class="Title" style="letter-spacing: 0.5em;">图书编号</span><input class="text" type="text" name="bookNo"><br><br>
             </div>
             <div class="lossResult">
                 <span class="Title" style="letter-spacing: 0.5em;">损失结果</span>
                 <select name="lossResult" id="lossResult" class="text">
-            <!-- check bookStatus in ('normal','outdated','broken','lost','others'), -->
-                <option value="normal">正常</option>
-                <option value="outdated">过时</option>
-                <option value="broken">损坏</option>
-                <option value="lost">丢失</option>
-                <option value="others">其他</option>
+                    <!-- check bookStatus in ('normal','outdated','broken','lost','others'), -->
+                    <option value="normal">正常</option>
+                    <option value="outdated">过时</option>
+                    <option value="broken">损坏</option>
+                    <option value="lost">丢失</option>
+                    <option value="others">其他</option>
                 </select>
             </div>
             <div class="submit"><input class="button" type="submit" name="button" value="提交"></div>

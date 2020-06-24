@@ -63,7 +63,7 @@
             position: absolute;
             left: 150px;
             width: 220px;
-            background:#f2eee1;
+            background: #f2eee1;
         }
 
         .Title {
@@ -99,63 +99,65 @@
             border-radius: 2px;
             padding: 5px;
         }
+
         .option {
             position: absolute;
             top: 95px;
             left: 65px;
         }
-        [type="radio"]{
-            opacity:0;
-        }
-        [type="radio"] + label{
-            position:relative;
-            padding-left:30px;
-            cursor:pointer;
-            display:inline-block;
-            color:#666;
-            line-height:25px;
+
+        [type="radio"] {
+            opacity: 0;
         }
 
-        [type="radio"] + label::before{
-            content:"";
-            position:absolute;
-            left:0;
-            top:0;
-            width:18px;
-            height:18px;
+        [type="radio"]+label {
+            position: relative;
+            padding-left: 30px;
+            cursor: pointer;
+            display: inline-block;
+            color: #666;
+            line-height: 25px;
+        }
+
+        [type="radio"]+label::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 18px;
+            height: 18px;
             border-radius: 100%;
-            border:2px solid #403e3e;
-            background:#f2eee1;
+            border: 2px solid #403e3e;
+            background: #f2eee1;
 
         }
 
-        [type="radio"]:checked + label::after{
-            content:"";
-            position:absolute;
-            left:4px;
-            top:4px;
-            width:14px;
-            height:14px;
-            border-radius:100%;
-            background:#403e3e;
-            transform:scale(1);
-            opacity:1;
-            transition:all .3s ease;
+        [type="radio"]:checked+label::after {
+            content: "";
+            position: absolute;
+            left: 4px;
+            top: 4px;
+            width: 14px;
+            height: 14px;
+            border-radius: 100%;
+            background: #403e3e;
+            transform: scale(1);
+            opacity: 1;
+            transition: all .3s ease;
         }
 
-        [type="radio"]:not(:checked) + label::after{
-            content:"";
-            position:absolute;
-            left:4px;
-            top:4px;
-            width:14px;
-            height:14px;
-            border-radius:100%;
-            background:#f2eee1;
-            transform:scale(0);
-            opacity:0;
+        [type="radio"]:not(:checked)+label::after {
+            content: "";
+            position: absolute;
+            left: 4px;
+            top: 4px;
+            width: 14px;
+            height: 14px;
+            border-radius: 100%;
+            background: #f2eee1;
+            transform: scale(0);
+            opacity: 0;
         }
-
     </style>
 </head>
 
@@ -164,13 +166,11 @@
     <div class="box">
         <div class="head">查询罚款或损失记录</div>
         <br>
-        
+
         <form method="POST" action="fine_loss_record_backend.php">
             <div class="option">
-                <span class="select" style="letter-spacing: 32px;"><input type="radio" name="type" value="fine"
-                    checked="checked" id="fine"><label for="fine">罚款</label></span>
-                <span class="select" style="letter-spacing: 32px;"><input type="radio" name="type" value="loss" id="loss"><label
-                    for="loss">损失</label></span><br>
+                <span class="select" style="letter-spacing: 32px;"><input type="radio" name="type" value="fine" checked="checked" id="fine"><label for="fine">罚款</label></span>
+                <span class="select" style="letter-spacing: 32px;"><input type="radio" name="type" value="loss" id="loss"><label for="loss">损失</label></span><br>
             </div>
             <div class="submit"><input class="button" type="submit" name="button" value="生成表格"></div>
         </form>

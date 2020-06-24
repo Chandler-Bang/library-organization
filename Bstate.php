@@ -63,7 +63,7 @@
             position: absolute;
             left: 150px;
             width: 220px;
-            background:#f2eee1;
+            background: #f2eee1;
         }
 
         .Title {
@@ -91,10 +91,12 @@
             top: 95%;
             left: 10px;
         }
-        .info{
+
+        .info {
             position: absolute;
             top: 100px;
         }
+
         a {
             text-decoration: none;
             background-color: darkgoldenrod;
@@ -102,63 +104,65 @@
             border-radius: 2px;
             padding: 5px;
         }
+
         .option {
             position: absolute;
             top: 150px;
             left: 80px;
         }
-        [type="radio"]{
-            opacity:0;
-        }
-        [type="radio"] + label{
-            position:relative;
-            padding-left:30px;
-            cursor:pointer;
-            display:inline-block;
-            color:#666;
-            line-height:25px;
+
+        [type="radio"] {
+            opacity: 0;
         }
 
-        [type="radio"] + label::before{
-            content:"";
-            position:absolute;
-            left:0;
-            top:0;
-            width:18px;
-            height:18px;
+        [type="radio"]+label {
+            position: relative;
+            padding-left: 30px;
+            cursor: pointer;
+            display: inline-block;
+            color: #666;
+            line-height: 25px;
+        }
+
+        [type="radio"]+label::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 18px;
+            height: 18px;
             border-radius: 100%;
-            border:2px solid #403e3e;
-            background:#f2eee1;
+            border: 2px solid #403e3e;
+            background: #f2eee1;
 
         }
 
-        [type="radio"]:checked + label::after{
-            content:"";
-            position:absolute;
-            left:4px;
-            top:4px;
-            width:14px;
-            height:14px;
-            border-radius:100%;
-            background:#403e3e;
-            transform:scale(1);
-            opacity:1;
-            transition:all .3s ease;
+        [type="radio"]:checked+label::after {
+            content: "";
+            position: absolute;
+            left: 4px;
+            top: 4px;
+            width: 14px;
+            height: 14px;
+            border-radius: 100%;
+            background: #403e3e;
+            transform: scale(1);
+            opacity: 1;
+            transition: all .3s ease;
         }
 
-        [type="radio"]:not(:checked) + label::after{
-            content:"";
-            position:absolute;
-            left:4px;
-            top:4px;
-            width:14px;
-            height:14px;
-            border-radius:100%;
-            background:#f2eee1;
-            transform:scale(0);
-            opacity:0;
+        [type="radio"]:not(:checked)+label::after {
+            content: "";
+            position: absolute;
+            left: 4px;
+            top: 4px;
+            width: 14px;
+            height: 14px;
+            border-radius: 100%;
+            background: #f2eee1;
+            transform: scale(0);
+            opacity: 0;
         }
-
     </style>
 </head>
 
@@ -168,13 +172,11 @@
         <div class="head">图书馆在馆状态</div>
         <form method="POST" action="Bstate_search.php">
             <div class="option">
-            <span class="select" style="letter-spacing: 0px;"><input type="radio" name="type" value="bookid"
-                checked="checked" id="bookid"><label for="bookid">图书编号</label></span>
-            <span class="select"><input type="radio" name="type" value="bookname" id="bookname"><label
-                for="bookname">图书名称</label></span>
+                <span class="select" style="letter-spacing: 0px;"><input type="radio" name="type" value="bookid" checked="checked" id="bookid"><label for="bookid">图书编号</label></span>
+                <span class="select"><input type="radio" name="type" value="bookname" id="bookname"><label for="bookname">图书名称</label></span>
             </div>
             <div class="info">
-                <span class="Title" style="letter-spacing: 0.5em;">输入对应信息</span><input class="text" type="text"name="bookNo"><br><br>
+                <span class="Title" style="letter-spacing: 0.5em;">输入对应信息</span><input class="text" type="text" name="bookNo"><br><br>
             </div>
             <div class="submit"><input class="button" type="submit" name="button" value="生成书单"></div>
         </form>

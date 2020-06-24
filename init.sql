@@ -71,3 +71,6 @@ CREATE TABLE loss
     recordDate date not null,
     foreign key (bookNo) references book(bookNo)
 );
+
+CREATE INDEX book_IND on book (bookNo);
+CREATE INDEX reader_IND on reader (readerNo);

@@ -21,4 +21,3 @@ if ($res) { //跳转页面
     mysqli_close($mysqli);
     echo '<script>alert("新书录入失败");location="addnewbook.php";</script>';
 }
-?>

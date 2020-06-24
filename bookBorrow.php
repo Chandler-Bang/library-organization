@@ -44,4 +44,3 @@ if(!$logQuery){
 }
 echo '<script>alert("借书成功");location="borrowpage.php";</script>';
 mysqli_close($mysqli);
-?>

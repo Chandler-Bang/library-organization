@@ -52,4 +52,3 @@ if($res){
     echo '<script>alert("还书操作录入失败");location="returnpage.php";</script>';
     mysqli_close($mysqli);
 }
-?>
