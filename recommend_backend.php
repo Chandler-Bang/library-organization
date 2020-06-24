@@ -21,11 +21,11 @@
 		.head
 		{
 			text-align: center;
-			font-family:仿宋;
-		  font-size:90px;
-		  font-weight:bold;
-		 color:white;
-		 height:40%;
+			font-family:Microsoft Yahei;
+			font-size:90px;
+			font-weight:bold;
+			color:white;
+			height:40%;
 		}
 		
 		table
@@ -45,7 +45,7 @@
 	  
 	  .bottom
 	  {
-	text-align:center;
+		text-align:center;
 	  }
     </style>
 </head>
