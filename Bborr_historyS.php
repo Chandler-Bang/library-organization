@@ -22,10 +22,10 @@
 		{
 			text-align: center;
 			font-family:Microsoft Yahei;
-		  font-size:90px;
-		  font-weight:bold;
-		 color:white;
-		 height:40%;
+			font-size:90px;
+			font-weight:bold;
+			color:white;
+			height:40%;
 		}
 		
 		table

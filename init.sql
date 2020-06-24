@@ -17,6 +17,7 @@ CREATE TABLE admin
 (
     adminname varchar(10) primary key,
     password varchar(10) not null
+    level enum('normal', 'super');
 );
 
 -- 读者信息
@@ -66,7 +67,7 @@ CREATE TABLE fine
 CREATE TABLE loss
 (
     bookNo varchar(10) primary key,
-    lossResult varchar(20) not null,
+    lossResult enum('normal','outdated','broken','others','lost'),
     recordDate date not null,
     foreign key (bookNo) references book(bookNo)
 );
