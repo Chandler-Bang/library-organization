@@ -29,7 +29,7 @@ if(!$lockQUery){
 // 第三步: 判断图书是否造成损失，如果是，登记损失
 $inLibStatus = ($lossResult=='normal')?'available':'unavailable';
 if($inLibStatus!='available'){
-    $lossRecord = "INSERT INTO loss values('$bookNo','$lossResult''$recordDate')";
+    $lossRecord = "INSERT INTO loss values('$bookNo','$lossResult''$returnDate')";
     mysqli_query($mysqli,$lossRecord);
 }
 // 第四步: 登记归还记录
