@@ -82,7 +82,6 @@
         border: none;
         outline: none;
         background: none;
-
         font-size: 18px;
         float: left;
         margin: 0 10px;

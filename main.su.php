@@ -63,7 +63,7 @@
 <div class="head"><br>欢迎来到图书管理系统<br>(超级管理员)</div>
 <br>
 <table class="tablepos" >
-<tr >  <td> <a href=".php">📥注册管理员</a> </td>  <td ><a href=".php" >🔍查询管理员信息</a></td>  <td ><a href="index.php">🔙退出登录</a></td>  </tr>
+<tr >  <td> <a href="signup.php">📥注册管理员</a> </td>  <td ><a href=".php" >🔍查询管理员信息</a></td>  <td ><a href="index.php">🔙退出登录</a></td>  </tr>
 </table>
 
 </div>

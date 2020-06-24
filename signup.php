@@ -27,7 +27,13 @@
             <input type="password" placeholder="密码"
                    name="password" value="">
         </div>
-
+        <div class="level">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="select" style="letter-spacing: 0px;"><input type="radio" name="level" value="normal"
+                checked="checked" id="normal"><label for="normal">Normal</label></span>
+            <span class="select"><input type="radio" name="level" value="super" id="normal"><label
+                for="normal">Super</label></span>            
+        </div>
         <input class="button" type="submit"
                name="signup" value="注册">
     </div>
@@ -63,7 +69,7 @@
         padding: 13px;
     }
 
-    .textbox {
+    .textbox ,.level{
         width: 100%;
         overflow: hidden;
         font-size: 20px;
@@ -99,4 +105,12 @@
         cursor: pointer;
         margin: 12px 0;
     }
+    /* .level {
+        border: none;
+        font-size: 18px;
+        margin: auto;
+        align: center;
+        float: left;
+        width: 100%;
+    } */
 </style>
