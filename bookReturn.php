@@ -43,9 +43,9 @@ if($res){
     echo '<script>
             var r = confirm("还书结果录入完毕，是否跳转到罚款界面？");
             if(r==true){
-                location=finepage.php;
+                location="finepage.php";
             }else{
-                location=bookReturn.php
+                location="bookReturn.php";
             }
           </script>'; 
 } else {
