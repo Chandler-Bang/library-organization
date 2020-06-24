@@ -1,12 +1,12 @@
 <?php
 $bookNo=$_REQUEST['bookNo'];//书籍编号
 $bookName=$_REQUEST['bookName'];//书名
-$importDate=$_REQUEST['importDate'];//导入日期
-$inLibStatus='available'; //在馆状态
 $bookPrice=$_REQUEST['bookPrice'];//书籍价格(2位小数点)
 $frequ=0;//借书频率
 $category=$_REQUEST['category'];//书籍种类
-
+$inLibStatus = 'available';
+date_default_timezone_set('Asia/Shanghai');//设置为北京时间
+$importDate=date("Y-m-d");//自动获取时间(年月日)
 $mysqli = mysqli_connect("localhost", "root", "", "library");
 if (mysqli_connect_errno()) {
     die("Failed to connect to MySQL: (" . mysqli_connect_errno() . ") " . mysqli_connect_error());

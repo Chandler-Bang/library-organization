@@ -28,7 +28,7 @@
             background-color: rgb(173, 169, 129);
             margin: 0px auto;
             width: 400px;
-            height: 400px;
+            height: 360px;
             position: relative;
         }
 
@@ -52,7 +52,7 @@
 
         .submit {
             position: absolute;
-            top: 340px;
+            top: 300px;
             left: 160px;
         }
 
@@ -117,10 +117,10 @@
                 <span class="Title" style="letter-spacing: 0.5em;">图书名</span><input class="text" type="text" name="bookName"><br><br>
             </div>
 			
-			<div >
+			<!-- <div >
                 <span class="Title" style="letter-spacing: 0.5em;">登记日期</span><input class="text" type="text"
                     name="importDate"><br><br>
-            </div>
+            </div> -->
 			
 			<!-- <div>
                 <span class="Title" style="letter-spacing: 0.5em;">在馆状态</span><input class="text" type="text"

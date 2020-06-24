@@ -13,7 +13,7 @@ if($id=='bookid')
 }
 if($id=='bookname')
 {
-	$str="select bookName,bookNo,inLibStatus from book where bookName='$bookNo'";
+	$str="select bookName,bookNo,inLibStatus from book where bookName like '%$bookNo%'";
 	echo"<tr><td>图书名</td><td>图书编号</td><td>在馆状态</td></tr>";//按书名从书单中查询书籍状态
 }
 if($res=mysqli_query($conn,$str))  //这个和mysql_query参数有一定的顺序差别，这个用不了反过来就行
