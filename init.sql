@@ -32,7 +32,7 @@ CREATE TABLE borrowBook
 (
     serialNumber int primary key AUTO_INCREMENT,
     readerNo varchar(10) not null,
-    bookNo varchar(10) not null unique,
+    bookNo varchar(10) not null,
     borrowDate date not null,
     foreign key (readerNo) references reader(readerNo),
     foreign key (bookNo) references book(bookNo)
