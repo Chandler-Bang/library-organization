@@ -16,8 +16,8 @@ CREATE TABLE book
 CREATE TABLE admin
 (
     adminname varchar(10) primary key,
-    password varchar(10) not null
-    level enum('normal', 'super');
+    password varchar(10) not null,
+    level enum('normal', 'super')
 );
 
 -- 读者信息
