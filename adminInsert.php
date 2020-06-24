@@ -5,13 +5,14 @@ $mysqli = mysqli_connect("localhost", "root", "q123654987", "library");
 if (mysqli_connect_errno($mysqli)) {
     die("Failed to connect to MySQL: (" . mysqli_connect_errno() . ") " . mysqli_connect_error());
 } 
+
 //插入管理员信息命令
 $demand = "INSERT INTO admin values('$admin','$paswrd')";
 $res=mysqli_query($mysqli,$demand);
 if ($res) {
-    echo "Insert successfully!<br/>";
+    echo '<script>alert("管理员信息录入成功");location="main.php";</script>';//这里的location界面需要商榷
 } else {
-    echo "Insert failed!<br/>";
+    echo '<script>alert("管理员信息录入失败");location="signup.php";</script>';
 }
 mysqli_free_result($res);
 mysqli_close($mysqli);
