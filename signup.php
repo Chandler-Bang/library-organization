@@ -33,7 +33,7 @@
             <input class="button" type="submit" name="signup" value="注册">
         </div>
     </form>
-    <div class="back"><a href="main.php">回到首页</a></div>
+    <div class="back"><a href="main.su.php">回到首页</a></div>
 </body>
 
 </html>
